@@ -1,0 +1,23 @@
+{
+  "report_pages": 12,
+  "report_sha256": "7a5f75ca47e8a36cf379deeb75611becc08e8088fbbe5304ecaebb505c520146",
+  "notebook": {
+    "code_cells_executed": 18,
+    "all_cells_passed": true,
+    "execution_method": "Sequential IPython in one process; no socket-based Jupyter kernel",
+    "mode": "RUN_TRAIN=False; RUN_REVISION_CHECKS=False; RUN_FEEDBACK_CHECKS=False; verified caches",
+    "revision_diagnostics": "Original revision caches reconstructed; review response ran 35 matched fits and recomputed tail/ranking checks",
+    "direct_colab_browser_tested": false,
+    "seconds": 26.983129024505615
+  },
+  "valid_embedded_pngs": 14,
+  "valid_png_files": 27,
+  "feedback_verification": {
+    "matched_fold_fits": 35,
+    "common_rows_and_encoding_verified": true,
+    "matched_summary_values_verified": 28,
+    "ranking_and_tail_recomputed": true,
+    "tail_weighted_MAE_reconciled": true,
+    "primary_selection_unchanged": true
+  }
+}

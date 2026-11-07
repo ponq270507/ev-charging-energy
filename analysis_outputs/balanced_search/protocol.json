@@ -1,0 +1,732 @@
+{
+  "started_utc": "2026-10-22T09:24:45.920225+00:00",
+  "purpose": "post-review development-only equal-trial-budget sensitivity study",
+  "seed": 42,
+  "raw_predictors": [
+    "hour",
+    "dow",
+    "month",
+    "is_weekend",
+    "days_since_start",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "known_user",
+    "ChargerID",
+    "ChargerCompany",
+    "Location",
+    "ChargerType",
+    "global_log_count",
+    "global_energy_mean",
+    "global_energy_std",
+    "global_energy_last",
+    "global_energy_last3_mean",
+    "global_energy_last10_mean",
+    "global_energy_last10_median",
+    "global_duration_mean",
+    "global_duration_last",
+    "global_duration_last3_mean",
+    "global_duration_last10_median",
+    "global_power_last10_median",
+    "global_power_last3_mean",
+    "global_historical_max_energy",
+    "global_historical_min_energy",
+    "global_log_history_span_days",
+    "global_mean_cycle_days",
+    "global_days_since_label",
+    "global_relative_cycle_gap",
+    "global_gap_energy_proxy",
+    "charger_log_count",
+    "charger_energy_mean",
+    "charger_energy_std",
+    "charger_energy_last",
+    "charger_energy_last3_mean",
+    "charger_energy_last10_mean",
+    "charger_energy_last10_median",
+    "charger_duration_mean",
+    "charger_duration_last",
+    "charger_duration_last3_mean",
+    "charger_duration_last10_median",
+    "charger_power_last10_median",
+    "charger_power_last3_mean",
+    "charger_historical_max_energy",
+    "charger_historical_min_energy",
+    "charger_log_history_span_days",
+    "charger_mean_cycle_days",
+    "charger_days_since_label",
+    "charger_relative_cycle_gap",
+    "charger_gap_energy_proxy",
+    "user_log_count",
+    "user_energy_mean",
+    "user_energy_std",
+    "user_energy_last",
+    "user_energy_last3_mean",
+    "user_energy_last10_mean",
+    "user_energy_last10_median",
+    "user_duration_mean",
+    "user_duration_last",
+    "user_duration_last3_mean",
+    "user_duration_last10_median",
+    "user_power_last10_median",
+    "user_power_last3_mean",
+    "user_historical_max_energy",
+    "user_historical_min_energy",
+    "user_log_history_span_days",
+    "user_mean_cycle_days",
+    "user_days_since_label",
+    "user_relative_cycle_gap",
+    "user_gap_energy_proxy",
+    "charger_weekday_log_count",
+    "charger_weekday_energy_mean",
+    "charger_weekday_energy_std",
+    "charger_weekday_energy_last",
+    "charger_weekday_energy_last3_mean",
+    "charger_weekday_energy_last10_mean",
+    "charger_weekday_energy_last10_median",
+    "charger_weekday_duration_mean",
+    "charger_weekday_duration_last",
+    "charger_weekday_duration_last3_mean",
+    "charger_weekday_duration_last10_median",
+    "charger_weekday_power_last10_median",
+    "charger_weekday_power_last3_mean",
+    "charger_weekday_historical_max_energy",
+    "charger_weekday_historical_min_energy",
+    "charger_weekday_log_history_span_days",
+    "charger_weekday_mean_cycle_days",
+    "charger_weekday_days_since_label",
+    "charger_weekday_relative_cycle_gap",
+    "charger_weekday_gap_energy_proxy",
+    "user_weekday_log_count",
+    "user_weekday_energy_mean",
+    "user_weekday_energy_std",
+    "user_weekday_energy_last",
+    "user_weekday_energy_last3_mean",
+    "user_weekday_energy_last10_mean",
+    "user_weekday_energy_last10_median",
+    "user_weekday_duration_mean",
+    "user_weekday_duration_last",
+    "user_weekday_duration_last3_mean",
+    "user_weekday_duration_last10_median",
+    "user_weekday_power_last10_median",
+    "user_weekday_power_last3_mean",
+    "user_weekday_historical_max_energy",
+    "user_weekday_historical_min_energy",
+    "user_weekday_log_history_span_days",
+    "user_weekday_mean_cycle_days",
+    "user_weekday_days_since_label",
+    "user_weekday_relative_cycle_gap",
+    "user_weekday_gap_energy_proxy",
+    "user_charger_log_count",
+    "user_charger_energy_mean",
+    "user_charger_energy_std",
+    "user_charger_energy_last",
+    "user_charger_energy_last3_mean",
+    "user_charger_energy_last10_mean",
+    "user_charger_energy_last10_median",
+    "user_charger_duration_mean",
+    "user_charger_duration_last",
+    "user_charger_duration_last3_mean",
+    "user_charger_duration_last10_median",
+    "user_charger_power_last10_median",
+    "user_charger_power_last3_mean",
+    "user_charger_historical_max_energy",
+    "user_charger_historical_min_energy",
+    "user_charger_log_history_span_days",
+    "user_charger_mean_cycle_days",
+    "user_charger_days_since_label",
+    "user_charger_relative_cycle_gap",
+    "user_charger_gap_energy_proxy"
+  ],
+  "raw_predictor_count": 136,
+  "excluded": "raw UserID only; all personal histories retained",
+  "input": "common fold-fitted median imputation, scaling, and dense one-hot encoding",
+  "onehot_min_frequency": 10,
+  "onehot_max_categories": 64,
+  "candidates_per_tunable_family": 6,
+  "tunable_families": 6,
+  "untuned_reference": "Linear Regression; single OLS configuration",
+  "number_folds": 5,
+  "expected_fits": 185,
+  "budget_unit": "distinct configurations times the same five folds; not equal wall-clock time",
+  "sampling": "original setting plus first five distinct settings from a seed-42 random permutation of the full finite grid",
+  "search_spaces": {
+    "Ridge": {
+      "alpha": [
+        0.1,
+        1,
+        10,
+        100,
+        1000,
+        10000
+      ]
+    },
+    "kNN": {
+      "n_neighbors": [
+        15,
+        25,
+        50
+      ],
+      "weights": [
+        "uniform",
+        "distance"
+      ]
+    },
+    "Random Forest": {
+      "n_estimators": [
+        100,
+        140
+      ],
+      "max_depth": [
+        10,
+        16
+      ],
+      "min_samples_leaf": [
+        5,
+        8,
+        20
+      ],
+      "max_features": [
+        0.65,
+        0.85
+      ]
+    },
+    "HGB": {
+      "max_iter": [
+        180,
+        260,
+        400
+      ],
+      "max_leaf_nodes": [
+        7,
+        15,
+        31
+      ],
+      "min_samples_leaf": [
+        20,
+        30,
+        60
+      ],
+      "l2_regularization": [
+        0,
+        20,
+        50
+      ],
+      "learning_rate": [
+        0.03,
+        0.05,
+        0.07
+      ]
+    },
+    "LightGBM": {
+      "n_estimators": [
+        450,
+        700,
+        1000
+      ],
+      "num_leaves": [
+        7,
+        15,
+        31
+      ],
+      "min_child_samples": [
+        25,
+        60,
+        120
+      ],
+      "learning_rate": [
+        0.025,
+        0.03,
+        0.07
+      ],
+      "reg_lambda": [
+        5,
+        20,
+        50
+      ]
+    },
+    "CatBoost": {
+      "iterations": [
+        400,
+        500,
+        700
+      ],
+      "depth": [
+        5,
+        6,
+        7
+      ],
+      "learning_rate": [
+        0.035,
+        0.05,
+        0.06
+      ],
+      "l2_leaf_reg": [
+        10,
+        20,
+        30
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 1,
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 2,
+      "params": {
+        "alpha": 10
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 3,
+      "params": {
+        "alpha": 10000
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 4,
+      "params": {
+        "alpha": 1000
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 5,
+      "params": {
+        "alpha": 1
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 6,
+      "params": {
+        "alpha": 0.1
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 1,
+      "params": {
+        "n_neighbors": 25,
+        "weights": "distance"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 2,
+      "params": {
+        "n_neighbors": 25,
+        "weights": "uniform"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 3,
+      "params": {
+        "n_neighbors": 50,
+        "weights": "distance"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 4,
+      "params": {
+        "n_neighbors": 50,
+        "weights": "uniform"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 5,
+      "params": {
+        "n_neighbors": 15,
+        "weights": "distance"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 6,
+      "params": {
+        "n_neighbors": 15,
+        "weights": "uniform"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 1,
+      "params": {
+        "n_estimators": 140,
+        "max_depth": 16,
+        "min_samples_leaf": 8,
+        "max_features": 0.85
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 2,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.65,
+        "min_samples_leaf": 20,
+        "n_estimators": 100
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 3,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.65,
+        "min_samples_leaf": 8,
+        "n_estimators": 140
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 4,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.85,
+        "min_samples_leaf": 5,
+        "n_estimators": 100
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 5,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.85,
+        "min_samples_leaf": 5,
+        "n_estimators": 140
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 6,
+      "params": {
+        "max_depth": 10,
+        "max_features": 0.85,
+        "min_samples_leaf": 8,
+        "n_estimators": 140
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 1,
+      "params": {
+        "max_iter": 260,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 2,
+      "params": {
+        "l2_regularization": 20,
+        "learning_rate": 0.07,
+        "max_iter": 260,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 30
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 3,
+      "params": {
+        "l2_regularization": 20,
+        "learning_rate": 0.07,
+        "max_iter": 180,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 4,
+      "params": {
+        "l2_regularization": 0,
+        "learning_rate": 0.05,
+        "max_iter": 400,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 5,
+      "params": {
+        "l2_regularization": 20,
+        "learning_rate": 0.07,
+        "max_iter": 400,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 60
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 6,
+      "params": {
+        "l2_regularization": 50,
+        "learning_rate": 0.03,
+        "max_iter": 260,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 60
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 1,
+      "params": {
+        "n_estimators": 700,
+        "num_leaves": 15,
+        "min_child_samples": 60,
+        "learning_rate": 0.03,
+        "reg_lambda": 20
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 2,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 700,
+        "num_leaves": 7,
+        "reg_lambda": 20
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 3,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 450,
+        "num_leaves": 15,
+        "reg_lambda": 5
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 4,
+      "params": {
+        "learning_rate": 0.025,
+        "min_child_samples": 60,
+        "n_estimators": 1000,
+        "num_leaves": 31,
+        "reg_lambda": 5
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 5,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 1000,
+        "num_leaves": 15,
+        "reg_lambda": 50
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 6,
+      "params": {
+        "learning_rate": 0.07,
+        "min_child_samples": 25,
+        "n_estimators": 700,
+        "num_leaves": 7,
+        "reg_lambda": 50
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 1,
+      "params": {
+        "iterations": 500,
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 20
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 2,
+      "params": {
+        "depth": 6,
+        "iterations": 500,
+        "l2_leaf_reg": 10,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 3,
+      "params": {
+        "depth": 7,
+        "iterations": 400,
+        "l2_leaf_reg": 30,
+        "learning_rate": 0.06
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 4,
+      "params": {
+        "depth": 6,
+        "iterations": 700,
+        "l2_leaf_reg": 30,
+        "learning_rate": 0.035
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 5,
+      "params": {
+        "depth": 6,
+        "iterations": 400,
+        "l2_leaf_reg": 10,
+        "learning_rate": 0.06
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 6,
+      "params": {
+        "depth": 6,
+        "iterations": 500,
+        "l2_leaf_reg": 20,
+        "learning_rate": 0.035
+      }
+    },
+    {
+      "model": "Linear Regression",
+      "family": "linear",
+      "trial": 1,
+      "params": {}
+    }
+  ],
+  "selection": "highest unweighted mean fold R2 per family; lower trial breaks exact ties",
+  "search_scores_are_nested": false,
+  "knn_training_cap": null,
+  "same_training_rows": true,
+  "final_test_start": "2022-07-19",
+  "last_search_arrival": "2022-07-18 23:21:00",
+  "final_test_scored": false,
+  "primary_selection_changed": false,
+  "source_sha256": "d541259bed55e2a9bc3413756954e7a059b50f9c9031f1dfc6ec87cbf3afd358",
+  "code_sha256": "87d5829cd16f1c9be74178ac6b4d531a8b9709c001593ba6e9eec37384c9dca7",
+  "original_artifact_hashes": {
+    "analysis_outputs/models/selection_before_test.json": "ffd1cf1cb21d265f07374136c816a02666218d943223c391a2bca0db6d74b871",
+    "analysis_outputs/models/arrival_model_bundle.joblib": "82773453c72bc2ab54c40dea2c2b6aa83d4c9f11faf6061c8baf0fa303e8dcea",
+    "analysis_outputs/models/personalized_test_predictions.csv": "7eee9b6179c2ed13e59cd4c2175b943ec8a36adbe8a9b5f8acc5a00b083bb64f"
+  },
+  "cautions": [
+    "finite, family-specific spaces",
+    "same-fold selection scores are exploratory",
+    "prior test exposure persists",
+    "shared encoding may disadvantage native-category models"
+  ],
+  "fold_input_hashes": [
+    {
+      "fold": 1,
+      "fit_rows": 3078,
+      "valid_rows": 3348,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "fa35c1a80aed562f47a804d97a97d86fea11bf9b51f20cb409c62b11cb67b2f1",
+      "valid_matrix_sha256": "d16d5d5ac9ba05c350cd779ba31f6f20b8b98e9ef1a61f6d9a79b1a9cc648500",
+      "train_rows_sha256": "53b0ad642e0fce7dcca985ffe0f6468139506fa94a276755cee432be49a2c532",
+      "valid_rows_sha256": "b0eeb74208db40681f0400189f357c2721ad925626fe396307b6f2dd5e2857af"
+    },
+    {
+      "fold": 2,
+      "fit_rows": 6418,
+      "valid_rows": 5323,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "bfa560695d59c68b4759970c52c33a9fd2e529b518c7a111344592c9b18f31dd",
+      "valid_matrix_sha256": "acf93adb6cb74b8a14acb5228901752d8dfa0b41f22a3ca2b9934a43cbe20194",
+      "train_rows_sha256": "5b6ff8688329091b5d9a3126f58125a72fd880419a804db10fd75e326c34c255",
+      "valid_rows_sha256": "de6ccd454c7303d48afa9119e1af7519cfceb5220f707f8d05fb734b2d97d635"
+    },
+    {
+      "fold": 3,
+      "fit_rows": 11737,
+      "valid_rows": 5333,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "dd46c3fcf00769d690ff84f074714178c87ed54d6f2c39d83e6fc21f6c7422bc",
+      "valid_matrix_sha256": "048ae777a134a56086059535ea7125e422d62ccfd019453cc9ac7d4e3e4a69e2",
+      "train_rows_sha256": "3dd467b1375063d123ffb6c057a1d15f97c0a49b7baa90f6b068d90ad812bd90",
+      "valid_rows_sha256": "ba4e55df43786614da7fbe24de7eca3492e6462d9fe4ca219233cb123559965b"
+    },
+    {
+      "fold": 4,
+      "fit_rows": 17079,
+      "valid_rows": 5969,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "7a3ae01b7d8c77b084bd2339adf1f4876e0cf0cd9e34cb08ed70ee4009e8c231",
+      "valid_matrix_sha256": "11c68416c521149a7c10aa272eb9ef378eb742df7bb2b1f18053a954b599ece2",
+      "train_rows_sha256": "5d5862365895bb1e6a292cee8abb50ad294544c3d665d68b75d68184b21b345f",
+      "valid_rows_sha256": "ab21a9a40b7f463888f56b785c6e551f2877d585ca44fdba1e6ba0c1e6669e15"
+    },
+    {
+      "fold": 5,
+      "fit_rows": 23034,
+      "valid_rows": 6730,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "78571d543dc51baafa8ba0965a87cdf0b6ca32939fe2066996a6837fb6cf1e68",
+      "valid_matrix_sha256": "3197420d559bd3a0d3f36973bcf3052446c329ff4079b4c7a7681ad23082147d",
+      "train_rows_sha256": "864d5ec7c32813f70362601f8cd8dee2dd76f51f4552ed94be32f994e3bfaafa",
+      "valid_rows_sha256": "c6343e405125b65cfc5cb7ad3a59c952507b01df0f354444f1b675071306292e"
+    }
+  ]
+}

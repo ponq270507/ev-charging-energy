@@ -1,0 +1,131 @@
+{
+  "passed": true,
+  "runtime": "local IPython in fresh Python process",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "all_run_flags_false": true,
+  "training_performed": false,
+  "code_cells_executed": 20,
+  "elapsed_seconds": 193.35,
+  "cells": [
+    {
+      "cell_index": 2,
+      "execution_count": 1,
+      "passed": true,
+      "elapsed_seconds": 1.54
+    },
+    {
+      "cell_index": 4,
+      "execution_count": 2,
+      "passed": true,
+      "elapsed_seconds": 29.54
+    },
+    {
+      "cell_index": 6,
+      "execution_count": 3,
+      "passed": true,
+      "elapsed_seconds": 0.44
+    },
+    {
+      "cell_index": 8,
+      "execution_count": 4,
+      "passed": true,
+      "elapsed_seconds": 1.7
+    },
+    {
+      "cell_index": 10,
+      "execution_count": 5,
+      "passed": true,
+      "elapsed_seconds": 0.06
+    },
+    {
+      "cell_index": 12,
+      "execution_count": 6,
+      "passed": true,
+      "elapsed_seconds": 0.0
+    },
+    {
+      "cell_index": 14,
+      "execution_count": 7,
+      "passed": true,
+      "elapsed_seconds": 12.54
+    },
+    {
+      "cell_index": 16,
+      "execution_count": 8,
+      "passed": true,
+      "elapsed_seconds": 0.02
+    },
+    {
+      "cell_index": 18,
+      "execution_count": 9,
+      "passed": true,
+      "elapsed_seconds": 0.32
+    },
+    {
+      "cell_index": 20,
+      "execution_count": 10,
+      "passed": true,
+      "elapsed_seconds": 0.12
+    },
+    {
+      "cell_index": 22,
+      "execution_count": 11,
+      "passed": true,
+      "elapsed_seconds": 0.02
+    },
+    {
+      "cell_index": 24,
+      "execution_count": 12,
+      "passed": true,
+      "elapsed_seconds": 0.04
+    },
+    {
+      "cell_index": 26,
+      "execution_count": 13,
+      "passed": true,
+      "elapsed_seconds": 0.0
+    },
+    {
+      "cell_index": 28,
+      "execution_count": 14,
+      "passed": true,
+      "elapsed_seconds": 0.05
+    },
+    {
+      "cell_index": 30,
+      "execution_count": 15,
+      "passed": true,
+      "elapsed_seconds": 17.29
+    },
+    {
+      "cell_index": 32,
+      "execution_count": 16,
+      "passed": true,
+      "elapsed_seconds": 0.04
+    },
+    {
+      "cell_index": 34,
+      "execution_count": 17,
+      "passed": true,
+      "elapsed_seconds": 2.65
+    },
+    {
+      "cell_index": 36,
+      "execution_count": 18,
+      "passed": true,
+      "elapsed_seconds": 42.35
+    },
+    {
+      "cell_index": 38,
+      "execution_count": 19,
+      "passed": true,
+      "elapsed_seconds": 7.61
+    },
+    {
+      "cell_index": 40,
+      "execution_count": 20,
+      "passed": true,
+      "elapsed_seconds": 76.97
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+model,trial,cv_R2,cv_MAE,parameters
+Random Forest,3,0.5466570845852401,6.42433992082613,"{""max_depth"": 16, ""max_features"": 0.65, ""min_samples_leaf"": 8, ""n_estimators"": 140}"
+CatBoost,3,0.5445916358081169,6.492281222738521,"{""depth"": 7, ""iterations"": 400, ""l2_leaf_reg"": 30, ""learning_rate"": 0.06}"
+HGB,3,0.5438026496062117,6.47354611224676,"{""l2_regularization"": 20, ""learning_rate"": 0.07, ""max_iter"": 180, ""max_leaf_nodes"": 15, ""min_samples_leaf"": 20}"
+LightGBM,3,0.5433196958077543,6.4823162647635,"{""learning_rate"": 0.03, ""min_child_samples"": 120, ""n_estimators"": 450, ""num_leaves"": 15, ""reg_lambda"": 5}"
+Ridge,4,0.5207413784723274,6.740518386525011,"{""alpha"": 1000}"
+kNN,1,0.4734761424083141,7.092023668955756,"{""n_neighbors"": 25, ""weights"": ""distance""}"
+Linear Regression,1,0.1267877068516303,8.716178417584548,{}

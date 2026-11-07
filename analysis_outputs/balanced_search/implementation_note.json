@@ -1,0 +1,7 @@
+{
+  "candidate_sampling_correction": "An initial ordered-grid pilot was discarded after finding that requesting the whole ParameterSampler grid did not shuffle it. The final run explicitly permutes the finite grid with seed 42. Spaces stayed fixed; no final-test scores were used.",
+  "final_run_expected_fits": 185,
+  "final_run_completed": true,
+  "source_data_changed": false,
+  "primary_selection_changed": false
+}

@@ -1,0 +1,6 @@
+feature_set,cv_R2,cv_MAE,columns
+Charger and calendar,0.2338784473631876,8.589204606277473,16
+Identity and calendar,0.3928539304927011,7.487769320656353,17
+"Identity, calendar and causal history",0.5299359924334373,6.541620157115927,137
+"All history, without raw UserID",0.5341031600306636,6.528708005365365,136
+"Nonpersonal history, without UserID",0.299514519285982,8.283213013224438,76

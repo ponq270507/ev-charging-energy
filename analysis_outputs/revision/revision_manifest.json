@@ -1,0 +1,14 @@
+{
+  "source_sha256": "d541259bed55e2a9bc3413756954e7a059b50f9c9031f1dfc6ec87cbf3afd358",
+  "primary_model_sha256": "82773453c72bc2ab54c40dea2c2b6aa83d4c9f11faf6061c8baf0fa303e8dcea",
+  "revision_code_sha256": "0a87bcac7bac1f69ad7bb3fe05b37029194d1ee6bdede7c87795145e72e076f0",
+  "original_selection": "CV Blend",
+  "test_rows": 10999,
+  "original_primary_predictions_reconstructed": true,
+  "report_checks": 43,
+  "report_checks_matching": 43,
+  "all_report_checks_match": true,
+  "diagnostics_post_selection": true,
+  "seconds": 391.1518020629883,
+  "note": "Computed outputs, never copied from PDF. Disagreements are saved in report_consistency.csv."
+}

@@ -1,0 +1,28 @@
+{
+  "uploaded_xlsx": "ChargingRecords.xlsx",
+  "uploaded_xlsx_sha256": "c32fbc20c3cad0fbcc8d5aa5c9db679640192ba66a7c9c652dcf3c5bd8aa498b",
+  "raw_csv_sha256": "d541259bed55e2a9bc3413756954e7a059b50f9c9031f1dfc6ec87cbf3afd358",
+  "raw_rows": 72856,
+  "raw_columns": 13,
+  "row_order_preserved": true,
+  "per_column_content_matches": {
+    "UserID": true,
+    "ChargerID": true,
+    "ChargerCompany": true,
+    "Location": true,
+    "ChargerType": true,
+    "StartDay": true,
+    "StartTime": true,
+    "EndDay": true,
+    "EndTime": true,
+    "StartDatetime": true,
+    "EndDatetime": true,
+    "Duration": true,
+    "Demand": true
+  },
+  "conversion_only": "Excel date serial -> ISO dates; Excel time fractions -> seconds-of-day; timestamps interpreted as recorded local times. Source cells unchanged.",
+  "quarantine_rows": 3286,
+  "quarantine_raw_content_multiset_matches": true,
+  "external_dataset_added": false,
+  "quarantine_flags_match_after_name_mapping": true
+}

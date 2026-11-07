@@ -1,0 +1,981 @@
+{
+  "created_utc": "2026-10-22T09:57:47.593255+00:00",
+  "purpose": "retrospective nested temporal model-family assessment on pre-test dates",
+  "outer_folds": 5,
+  "inner_folds_per_outer": 3,
+  "candidates": [
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 1,
+      "params": {
+        "alpha": 100
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 2,
+      "params": {
+        "alpha": 10
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 3,
+      "params": {
+        "alpha": 10000
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 4,
+      "params": {
+        "alpha": 1000
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 5,
+      "params": {
+        "alpha": 1
+      }
+    },
+    {
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 6,
+      "params": {
+        "alpha": 0.1
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 1,
+      "params": {
+        "n_neighbors": 25,
+        "weights": "distance"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 2,
+      "params": {
+        "n_neighbors": 25,
+        "weights": "uniform"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 3,
+      "params": {
+        "n_neighbors": 50,
+        "weights": "distance"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 4,
+      "params": {
+        "n_neighbors": 50,
+        "weights": "uniform"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 5,
+      "params": {
+        "n_neighbors": 15,
+        "weights": "distance"
+      }
+    },
+    {
+      "model": "kNN",
+      "family": "knn",
+      "trial": 6,
+      "params": {
+        "n_neighbors": 15,
+        "weights": "uniform"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 1,
+      "params": {
+        "n_estimators": 140,
+        "max_depth": 16,
+        "min_samples_leaf": 8,
+        "max_features": 0.85
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 2,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.65,
+        "min_samples_leaf": 20,
+        "n_estimators": 100
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 3,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.65,
+        "min_samples_leaf": 8,
+        "n_estimators": 140
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 4,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.85,
+        "min_samples_leaf": 5,
+        "n_estimators": 100
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 5,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.85,
+        "min_samples_leaf": 5,
+        "n_estimators": 140
+      }
+    },
+    {
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 6,
+      "params": {
+        "max_depth": 10,
+        "max_features": 0.85,
+        "min_samples_leaf": 8,
+        "n_estimators": 140
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 1,
+      "params": {
+        "max_iter": 260,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 2,
+      "params": {
+        "l2_regularization": 20,
+        "learning_rate": 0.07,
+        "max_iter": 260,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 30
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 3,
+      "params": {
+        "l2_regularization": 20,
+        "learning_rate": 0.07,
+        "max_iter": 180,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 20
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 4,
+      "params": {
+        "l2_regularization": 0,
+        "learning_rate": 0.05,
+        "max_iter": 400,
+        "max_leaf_nodes": 31,
+        "min_samples_leaf": 20
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 5,
+      "params": {
+        "l2_regularization": 20,
+        "learning_rate": 0.07,
+        "max_iter": 400,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 60
+      }
+    },
+    {
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 6,
+      "params": {
+        "l2_regularization": 50,
+        "learning_rate": 0.03,
+        "max_iter": 260,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 60
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 1,
+      "params": {
+        "n_estimators": 700,
+        "num_leaves": 15,
+        "min_child_samples": 60,
+        "learning_rate": 0.03,
+        "reg_lambda": 20
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 2,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 700,
+        "num_leaves": 7,
+        "reg_lambda": 20
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 3,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 450,
+        "num_leaves": 15,
+        "reg_lambda": 5
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 4,
+      "params": {
+        "learning_rate": 0.025,
+        "min_child_samples": 60,
+        "n_estimators": 1000,
+        "num_leaves": 31,
+        "reg_lambda": 5
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 5,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 1000,
+        "num_leaves": 15,
+        "reg_lambda": 50
+      }
+    },
+    {
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 6,
+      "params": {
+        "learning_rate": 0.07,
+        "min_child_samples": 25,
+        "n_estimators": 700,
+        "num_leaves": 7,
+        "reg_lambda": 50
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 1,
+      "params": {
+        "iterations": 500,
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 20
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 2,
+      "params": {
+        "depth": 6,
+        "iterations": 500,
+        "l2_leaf_reg": 10,
+        "learning_rate": 0.05
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 3,
+      "params": {
+        "depth": 7,
+        "iterations": 400,
+        "l2_leaf_reg": 30,
+        "learning_rate": 0.06
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 4,
+      "params": {
+        "depth": 6,
+        "iterations": 700,
+        "l2_leaf_reg": 30,
+        "learning_rate": 0.035
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 5,
+      "params": {
+        "depth": 6,
+        "iterations": 400,
+        "l2_leaf_reg": 10,
+        "learning_rate": 0.06
+      }
+    },
+    {
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 6,
+      "params": {
+        "depth": 6,
+        "iterations": 500,
+        "l2_leaf_reg": 20,
+        "learning_rate": 0.035
+      }
+    },
+    {
+      "model": "Linear Regression",
+      "family": "linear",
+      "trial": 1,
+      "params": {}
+    }
+  ],
+  "spaces": {
+    "Ridge": {
+      "alpha": [
+        0.1,
+        1,
+        10,
+        100,
+        1000,
+        10000
+      ]
+    },
+    "kNN": {
+      "n_neighbors": [
+        15,
+        25,
+        50
+      ],
+      "weights": [
+        "uniform",
+        "distance"
+      ]
+    },
+    "Random Forest": {
+      "n_estimators": [
+        100,
+        140
+      ],
+      "max_depth": [
+        10,
+        16
+      ],
+      "min_samples_leaf": [
+        5,
+        8,
+        20
+      ],
+      "max_features": [
+        0.65,
+        0.85
+      ]
+    },
+    "HGB": {
+      "max_iter": [
+        180,
+        260,
+        400
+      ],
+      "max_leaf_nodes": [
+        7,
+        15,
+        31
+      ],
+      "min_samples_leaf": [
+        20,
+        30,
+        60
+      ],
+      "l2_regularization": [
+        0,
+        20,
+        50
+      ],
+      "learning_rate": [
+        0.03,
+        0.05,
+        0.07
+      ]
+    },
+    "LightGBM": {
+      "n_estimators": [
+        450,
+        700,
+        1000
+      ],
+      "num_leaves": [
+        7,
+        15,
+        31
+      ],
+      "min_child_samples": [
+        25,
+        60,
+        120
+      ],
+      "learning_rate": [
+        0.025,
+        0.03,
+        0.07
+      ],
+      "reg_lambda": [
+        5,
+        20,
+        50
+      ]
+    },
+    "CatBoost": {
+      "iterations": [
+        400,
+        500,
+        700
+      ],
+      "depth": [
+        5,
+        6,
+        7
+      ],
+      "learning_rate": [
+        0.035,
+        0.05,
+        0.06
+      ],
+      "l2_leaf_reg": [
+        10,
+        20,
+        30
+      ]
+    }
+  },
+  "expected_inner_fits": 555,
+  "expected_outer_regression_fits": 35,
+  "expected_dummy_fits": 5,
+  "expected_total_fits": 595,
+  "selector": "Within each outer fold, choose each family configuration by highest unweighted mean inner R2; choose the family by that inner score only. Exact ties use model name then trial.",
+  "common_raw_predictors": [
+    "hour",
+    "dow",
+    "month",
+    "is_weekend",
+    "days_since_start",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "known_user",
+    "ChargerID",
+    "ChargerCompany",
+    "Location",
+    "ChargerType",
+    "global_log_count",
+    "global_energy_mean",
+    "global_energy_std",
+    "global_energy_last",
+    "global_energy_last3_mean",
+    "global_energy_last10_mean",
+    "global_energy_last10_median",
+    "global_duration_mean",
+    "global_duration_last",
+    "global_duration_last3_mean",
+    "global_duration_last10_median",
+    "global_power_last10_median",
+    "global_power_last3_mean",
+    "global_historical_max_energy",
+    "global_historical_min_energy",
+    "global_log_history_span_days",
+    "global_mean_cycle_days",
+    "global_days_since_label",
+    "global_relative_cycle_gap",
+    "global_gap_energy_proxy",
+    "charger_log_count",
+    "charger_energy_mean",
+    "charger_energy_std",
+    "charger_energy_last",
+    "charger_energy_last3_mean",
+    "charger_energy_last10_mean",
+    "charger_energy_last10_median",
+    "charger_duration_mean",
+    "charger_duration_last",
+    "charger_duration_last3_mean",
+    "charger_duration_last10_median",
+    "charger_power_last10_median",
+    "charger_power_last3_mean",
+    "charger_historical_max_energy",
+    "charger_historical_min_energy",
+    "charger_log_history_span_days",
+    "charger_mean_cycle_days",
+    "charger_days_since_label",
+    "charger_relative_cycle_gap",
+    "charger_gap_energy_proxy",
+    "user_log_count",
+    "user_energy_mean",
+    "user_energy_std",
+    "user_energy_last",
+    "user_energy_last3_mean",
+    "user_energy_last10_mean",
+    "user_energy_last10_median",
+    "user_duration_mean",
+    "user_duration_last",
+    "user_duration_last3_mean",
+    "user_duration_last10_median",
+    "user_power_last10_median",
+    "user_power_last3_mean",
+    "user_historical_max_energy",
+    "user_historical_min_energy",
+    "user_log_history_span_days",
+    "user_mean_cycle_days",
+    "user_days_since_label",
+    "user_relative_cycle_gap",
+    "user_gap_energy_proxy",
+    "charger_weekday_log_count",
+    "charger_weekday_energy_mean",
+    "charger_weekday_energy_std",
+    "charger_weekday_energy_last",
+    "charger_weekday_energy_last3_mean",
+    "charger_weekday_energy_last10_mean",
+    "charger_weekday_energy_last10_median",
+    "charger_weekday_duration_mean",
+    "charger_weekday_duration_last",
+    "charger_weekday_duration_last3_mean",
+    "charger_weekday_duration_last10_median",
+    "charger_weekday_power_last10_median",
+    "charger_weekday_power_last3_mean",
+    "charger_weekday_historical_max_energy",
+    "charger_weekday_historical_min_energy",
+    "charger_weekday_log_history_span_days",
+    "charger_weekday_mean_cycle_days",
+    "charger_weekday_days_since_label",
+    "charger_weekday_relative_cycle_gap",
+    "charger_weekday_gap_energy_proxy",
+    "user_weekday_log_count",
+    "user_weekday_energy_mean",
+    "user_weekday_energy_std",
+    "user_weekday_energy_last",
+    "user_weekday_energy_last3_mean",
+    "user_weekday_energy_last10_mean",
+    "user_weekday_energy_last10_median",
+    "user_weekday_duration_mean",
+    "user_weekday_duration_last",
+    "user_weekday_duration_last3_mean",
+    "user_weekday_duration_last10_median",
+    "user_weekday_power_last10_median",
+    "user_weekday_power_last3_mean",
+    "user_weekday_historical_max_energy",
+    "user_weekday_historical_min_energy",
+    "user_weekday_log_history_span_days",
+    "user_weekday_mean_cycle_days",
+    "user_weekday_days_since_label",
+    "user_weekday_relative_cycle_gap",
+    "user_weekday_gap_energy_proxy",
+    "user_charger_log_count",
+    "user_charger_energy_mean",
+    "user_charger_energy_std",
+    "user_charger_energy_last",
+    "user_charger_energy_last3_mean",
+    "user_charger_energy_last10_mean",
+    "user_charger_energy_last10_median",
+    "user_charger_duration_mean",
+    "user_charger_duration_last",
+    "user_charger_duration_last3_mean",
+    "user_charger_duration_last10_median",
+    "user_charger_power_last10_median",
+    "user_charger_power_last3_mean",
+    "user_charger_historical_max_energy",
+    "user_charger_historical_min_energy",
+    "user_charger_log_history_span_days",
+    "user_charger_mean_cycle_days",
+    "user_charger_days_since_label",
+    "user_charger_relative_cycle_gap",
+    "user_charger_gap_energy_proxy"
+  ],
+  "raw_predictors": 136,
+  "seed": 42,
+  "encoding": "Each inner/outer training partition independently fits numeric median+scaling and one-hot min_frequency10/max_categories64; shared by all candidates in that partition.",
+  "inner_label_availability": "Both inner fit and inner validation rows are restricted to the outer fitting set. Inner fit labels must be available before inner validation boundary.",
+  "history": "online completion-gated replay; EndDatetime+60seconds < arrival; no model updates within a validation window",
+  "final_test_start": "2022-07-19",
+  "final_test_scored": false,
+  "primary_model_changed": false,
+  "source_sha256": "d541259bed55e2a9bc3413756954e7a059b50f9c9031f1dfc6ec87cbf3afd358",
+  "code_sha256": {
+    "nested_temporal.py": "5b60fa2091138585fdad1d8acf3d167645c7bdd3ae00d1441be561027901068f",
+    "balanced_search.py": "87d5829cd16f1c9be74178ac6b4d531a8b9709c001593ba6e9eec37384c9dca7",
+    "arrival_history.py": "27f65dbfc46c589c9bb257762bd7a341a7bc105045f43d8f8c105526baa62038",
+    "train_arrival.py": "7fed26f8d39e8d8e2d7d43529049de8b531d298487a762f793b976c3b8d48c7f"
+  },
+  "original_artifact_hashes": {
+    "analysis_outputs/models/selection_before_test.json": "ffd1cf1cb21d265f07374136c816a02666218d943223c391a2bca0db6d74b871",
+    "analysis_outputs/models/arrival_model_bundle.joblib": "82773453c72bc2ab54c40dea2c2b6aa83d4c9f11faf6061c8baf0fa303e8dcea",
+    "analysis_outputs/models/personalized_test_predictions.csv": "7eee9b6179c2ed13e59cd4c2175b943ec8a36adbe8a9b5f8acc5a00b083bb64f"
+  },
+  "partitions": [
+    {
+      "key": "o1_i1",
+      "stage": "inner",
+      "outer": 1,
+      "inner": 1,
+      "boundary": "2021-10-13 00:00:00",
+      "outer_boundary": "2021-11-21 00:00:00",
+      "fit_rows": 691,
+      "valid_rows": 748,
+      "encoded_columns": 155,
+      "train_matrix_sha256": "85b1d07b37bc155058067d200431760293c160d077ba324796d301dafe02bb62",
+      "valid_matrix_sha256": "fe63c8e0cc5c272acef86cf01b180660f5f51e01587a0d6dd4d8a44d7ac8787c",
+      "train_rows_sha256": "f7387d29d0eb53282798925fce90803976939483a44bd6769c5b1a290f199d23",
+      "valid_rows_sha256": "1b19df661ca77094e7914bb98d53d67a1c146705a433d1a8e5602e026cfedfef"
+    },
+    {
+      "key": "o1_i2",
+      "stage": "inner",
+      "outer": 1,
+      "inner": 2,
+      "boundary": "2021-10-26 00:00:00",
+      "outer_boundary": "2021-11-21 00:00:00",
+      "fit_rows": 1435,
+      "valid_rows": 787,
+      "encoded_columns": 190,
+      "train_matrix_sha256": "c053c6ceed6a869a6384279502ffe421f768486520700f80b960c4c3a599925a",
+      "valid_matrix_sha256": "31e22c6c67857f3204f2d4ab84f491a669ac364a7e00762c27e0dc008efe743b",
+      "train_rows_sha256": "71e4b8b9d6994677eb489836a4d9c65834602a563f08cedc4df19b32efb3b160",
+      "valid_rows_sha256": "127f476136ac08613e643bce63db942148075e74ceca0bb0b1c9d099e8be12ed"
+    },
+    {
+      "key": "o1_i3",
+      "stage": "inner",
+      "outer": 1,
+      "inner": 3,
+      "boundary": "2021-11-08 00:00:00",
+      "outer_boundary": "2021-11-21 00:00:00",
+      "fit_rows": 2224,
+      "valid_rows": 845,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "7b26532e04b631bb9c811897a8b697f549b08a75c1a340d05c2e35665a96b718",
+      "valid_matrix_sha256": "fdef0ca174f6b80a5d3d17f755abb30b7e1dc1df8a427c3046cdc9ec923ab7f5",
+      "train_rows_sha256": "08a3a53e9cc678b96d8e951d11f77f82828dc7c902911c330070555ebafd86d7",
+      "valid_rows_sha256": "162db59d979b95f5d6e7ddbda09d7f660aa6c8ac171dd78a9a82e09695f3d9bc"
+    },
+    {
+      "key": "o1",
+      "stage": "outer",
+      "outer": 1,
+      "inner": 0,
+      "boundary": "2021-11-21 00:00:00",
+      "outer_boundary": "2021-11-21 00:00:00",
+      "fit_rows": 3078,
+      "valid_rows": 3348,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "fa35c1a80aed562f47a804d97a97d86fea11bf9b51f20cb409c62b11cb67b2f1",
+      "valid_matrix_sha256": "d16d5d5ac9ba05c350cd779ba31f6f20b8b98e9ef1a61f6d9a79b1a9cc648500",
+      "train_rows_sha256": "53b0ad642e0fce7dcca985ffe0f6468139506fa94a276755cee432be49a2c532",
+      "valid_rows_sha256": "b0eeb74208db40681f0400189f357c2721ad925626fe396307b6f2dd5e2857af"
+    },
+    {
+      "key": "o2_i1",
+      "stage": "inner",
+      "outer": 2,
+      "inner": 1,
+      "boundary": "2021-10-25 00:00:00",
+      "outer_boundary": "2022-01-08 00:00:00",
+      "fit_rows": 1374,
+      "valid_rows": 1565,
+      "encoded_columns": 187,
+      "train_matrix_sha256": "a93a721011e9d23a9254c4ec96fef7b236d8f959c918b94018149296153a8141",
+      "valid_matrix_sha256": "01f44442c2e00e5c242f9523c270f86e402c11c86a63fff44a0dfd8c4ae7da6b",
+      "train_rows_sha256": "e671f8e1fc95da435cf0484f196f7dcb4cb60e996d3c34db638ca4be0ec72f48",
+      "valid_rows_sha256": "a0622b66c9aaa5512feef9d4654e3d244ba0ddb6bbbd970caa76535999f133bc"
+    },
+    {
+      "key": "o2_i2",
+      "stage": "inner",
+      "outer": 2,
+      "inner": 2,
+      "boundary": "2021-11-19 00:00:00",
+      "outer_boundary": "2022-01-08 00:00:00",
+      "fit_rows": 2941,
+      "valid_rows": 1646,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "95536dd6d54789e3531d88689c6b7fdfc0afc1c6d44f12cb9186167febe60cee",
+      "valid_matrix_sha256": "e755c247b496f42f3c3a765dcdbbbe7252c00f6d587e1294bb94a939e12ec763",
+      "train_rows_sha256": "014fb1c4247c8c58a3762161d4b2c4dae1afcf527244f9ea9b90c9d265171232",
+      "valid_rows_sha256": "1cc3fbefc11aef3d0f52ee8f36fa637eb925b639246a975aca067c2dede27329"
+    },
+    {
+      "key": "o2_i3",
+      "stage": "inner",
+      "outer": 2,
+      "inner": 3,
+      "boundary": "2021-12-14 00:00:00",
+      "outer_boundary": "2022-01-08 00:00:00",
+      "fit_rows": 4585,
+      "valid_rows": 1823,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "4af34e066ea4ee7e175cc7b306cb50782c97c66b1ee1560dc45a4065c5bb46f4",
+      "valid_matrix_sha256": "fac1e2daf4735269686a9e319cdbf19743865cbd27928c5705f088c329e3bbd0",
+      "train_rows_sha256": "ce62740bab697a1fd48ff0efe1fe4ed25eb8a32b606cfa9853873e48e3c45630",
+      "valid_rows_sha256": "942625c397ab73facf7f8e8310203705ba8c2ea18695bd682c53842a871213e2"
+    },
+    {
+      "key": "o2",
+      "stage": "outer",
+      "outer": 2,
+      "inner": 0,
+      "boundary": "2022-01-08 00:00:00",
+      "outer_boundary": "2022-01-08 00:00:00",
+      "fit_rows": 6418,
+      "valid_rows": 5323,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "bfa560695d59c68b4759970c52c33a9fd2e529b518c7a111344592c9b18f31dd",
+      "valid_matrix_sha256": "acf93adb6cb74b8a14acb5228901752d8dfa0b41f22a3ca2b9934a43cbe20194",
+      "train_rows_sha256": "5b6ff8688329091b5d9a3126f58125a72fd880419a804db10fd75e326c34c255",
+      "valid_rows_sha256": "de6ccd454c7303d48afa9119e1af7519cfceb5220f707f8d05fb734b2d97d635"
+    },
+    {
+      "key": "o3_i1",
+      "stage": "inner",
+      "outer": 3,
+      "inner": 1,
+      "boundary": "2021-11-06 00:00:00",
+      "outer_boundary": "2022-02-25 00:00:00",
+      "fit_rows": 2110,
+      "valid_rows": 2417,
+      "encoded_columns": 212,
+      "train_matrix_sha256": "5bcf2074388710aa708c206fa026cd4ce4b6fad523f6c478ec3e2684545a24a2",
+      "valid_matrix_sha256": "047ff706cb2a0200408c70c39151b4cc02481c03d9e828622e29ddd4dbb97e6b",
+      "train_rows_sha256": "20fdcd4deae70453979ab4568b8a31b856bce5d76355e9738d32cb5f1714ba2c",
+      "valid_rows_sha256": "4e505f802d54fd53b65b1539eafdb206bfc2c87130003f66a91363b306ea70fd"
+    },
+    {
+      "key": "o3_i2",
+      "stage": "inner",
+      "outer": 3,
+      "inner": 2,
+      "boundary": "2021-12-13 00:00:00",
+      "outer_boundary": "2022-02-25 00:00:00",
+      "fit_rows": 4526,
+      "valid_rows": 3100,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "3718beb5a8dc4c3ac4d3a7b1ffef883b4aee518d239e7367d94ee12d4600049d",
+      "valid_matrix_sha256": "99bec446cf448c36537cb68280a901448ac88c166b68f201402f838f38dc7fcb",
+      "train_rows_sha256": "270477f7fd5aa1846c8c256a915ee733c9502459e0b1d2d80fa66b7bafe1da4d",
+      "valid_rows_sha256": "8ec6afb68cd634c4823156d01d312fb06f81ee1edd731b461e4e269f720288bf"
+    },
+    {
+      "key": "o3_i3",
+      "stage": "inner",
+      "outer": 3,
+      "inner": 3,
+      "boundary": "2022-01-19 00:00:00",
+      "outer_boundary": "2022-02-25 00:00:00",
+      "fit_rows": 7619,
+      "valid_rows": 4104,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "28aae3de543a50b4c24af3182b643f5ae66f2a65289a4be708e9facb199c12c7",
+      "valid_matrix_sha256": "eb465efde0e42ea070cb221b449c2ad09c506b7ec1291393497b929b3b7439b8",
+      "train_rows_sha256": "afbebb416c556da8b23e9981020279fef7ba6260e0eae32ce8895d18d25b684d",
+      "valid_rows_sha256": "4fd20f7bf5e3b96b020f52a35b296f850deeed9894b40889494b40205e8f932a"
+    },
+    {
+      "key": "o3",
+      "stage": "outer",
+      "outer": 3,
+      "inner": 0,
+      "boundary": "2022-02-25 00:00:00",
+      "outer_boundary": "2022-02-25 00:00:00",
+      "fit_rows": 11737,
+      "valid_rows": 5333,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "dd46c3fcf00769d690ff84f074714178c87ed54d6f2c39d83e6fc21f6c7422bc",
+      "valid_matrix_sha256": "048ae777a134a56086059535ea7125e422d62ccfd019453cc9ac7d4e3e4a69e2",
+      "train_rows_sha256": "3dd467b1375063d123ffb6c057a1d15f97c0a49b7baa90f6b068d90ad812bd90",
+      "valid_rows_sha256": "ba4e55df43786614da7fbe24de7eca3492e6462d9fe4ca219233cb123559965b"
+    },
+    {
+      "key": "o4_i1",
+      "stage": "inner",
+      "outer": 4,
+      "inner": 1,
+      "boundary": "2021-11-18 00:00:00",
+      "outer_boundary": "2022-04-14 00:00:00",
+      "fit_rows": 2876,
+      "valid_rows": 3314,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "411c37b918eab24484df6966a8f89511afbf4b831893d2939f2fb4ac71be482a",
+      "valid_matrix_sha256": "7b7f3dd9f6a219cc2ba95cf1ae1007868625dd57109fe280721f7ce563b34964",
+      "train_rows_sha256": "ef382bcfec899ac94c001db4d7983bd8621297c940c2e158817017dae258e68c",
+      "valid_rows_sha256": "05cfd19f1991c0f15f2a56960a54ada9fcc6c9424200685ed029ef9fa0da5361"
+    },
+    {
+      "key": "o4_i2",
+      "stage": "inner",
+      "outer": 4,
+      "inner": 2,
+      "boundary": "2022-01-06 00:00:00",
+      "outer_boundary": "2022-04-14 00:00:00",
+      "fit_rows": 6192,
+      "valid_rows": 5428,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "6790725622fdd6322db8d98e66c79aac5c16b8dc25ccd9d29d2ed28ef2926507",
+      "valid_matrix_sha256": "56870fbb422de3054879c636fc257cd67cbfb510942449c201b3cae0e730adc3",
+      "train_rows_sha256": "6d3a3e1c1a7ea1071157581b0a10f26c2da6875cc508d59f52c584f38f05b33d",
+      "valid_rows_sha256": "3bb17a50f5806a2076e65cf12162591812235bd5bc0180d5649b1a7c136613cf"
+    },
+    {
+      "key": "o4_i3",
+      "stage": "inner",
+      "outer": 4,
+      "inner": 3,
+      "boundary": "2022-02-24 00:00:00",
+      "outer_boundary": "2022-04-14 00:00:00",
+      "fit_rows": 11609,
+      "valid_rows": 5449,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "d649d90e560e7779433c8825bcb76779057cb618c8ec5df817e34e62c6a07edb",
+      "valid_matrix_sha256": "9bfd7ca8d79a411865d5c05ccd01ca14af0dd43adce74b067356915ed11a0e7c",
+      "train_rows_sha256": "bbb7b956dd6b98b03797b62fd3f2bb8fecf31b6313fdcfe6a1e94702cc1db35c",
+      "valid_rows_sha256": "33254266eff5c8ba3df5ffbdfc97818881a893954f1daf3854d3f52bd1666ddd"
+    },
+    {
+      "key": "o4",
+      "stage": "outer",
+      "outer": 4,
+      "inner": 0,
+      "boundary": "2022-04-14 00:00:00",
+      "outer_boundary": "2022-04-14 00:00:00",
+      "fit_rows": 17079,
+      "valid_rows": 5969,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "7a3ae01b7d8c77b084bd2339adf1f4876e0cf0cd9e34cb08ed70ee4009e8c231",
+      "valid_matrix_sha256": "11c68416c521149a7c10aa272eb9ef378eb742df7bb2b1f18053a954b599ece2",
+      "train_rows_sha256": "5d5862365895bb1e6a292cee8abb50ad294544c3d665d68b75d68184b21b345f",
+      "valid_rows_sha256": "ab21a9a40b7f463888f56b785c6e551f2877d585ca44fdba1e6ba0c1e6669e15"
+    },
+    {
+      "key": "o5_i1",
+      "stage": "inner",
+      "outer": 5,
+      "inner": 1,
+      "boundary": "2021-11-30 00:00:00",
+      "outer_boundary": "2022-06-01 00:00:00",
+      "fit_rows": 3643,
+      "valid_rows": 5179,
+      "encoded_columns": 213,
+      "train_matrix_sha256": "0ffaba4cf0c1546b1615aa06fb59b30aa203e05424179020c90b4ae8dedc1991",
+      "valid_matrix_sha256": "9760a0df68b9f3af7e14ee0d8195e56c6448336492ab97eec07ecab00173ed12",
+      "train_rows_sha256": "d64a10b21e988fb2efa58288d8444aad2a164923297b8fcb5c0f67b5d6a1277b",
+      "valid_rows_sha256": "0c3c653d2d5aaedd08b890a1cb0a76807b2dd3b6182860590ce45a1826a9b025"
+    },
+    {
+      "key": "o5_i2",
+      "stage": "inner",
+      "outer": 5,
+      "inner": 2,
+      "boundary": "2022-01-30 00:00:00",
+      "outer_boundary": "2022-06-01 00:00:00",
+      "fit_rows": 8814,
+      "valid_rows": 6843,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "c3422c9a1e97ee7ed2918eaf5709f1f0372da9543690f780c6ddaf4e7c709114",
+      "valid_matrix_sha256": "cafe47f9db55da31049abf4e78e8a436f473cf7d4387d91bb3eea809b802c0da",
+      "train_rows_sha256": "57f781e3aa2b2dc48b504afb4f1c664f988a8778c4e82113900c7d82f21ba626",
+      "valid_rows_sha256": "e334f7d9d7fd559d409e84f251f0ee2b8da88fa5bd70674bfcb3a43728747ba9"
+    },
+    {
+      "key": "o5_i3",
+      "stage": "inner",
+      "outer": 5,
+      "inner": 3,
+      "boundary": "2022-04-01 00:00:00",
+      "outer_boundary": "2022-06-01 00:00:00",
+      "fit_rows": 15660,
+      "valid_rows": 7360,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "a0af3f07273d0b85b472839afd4e9433606871e9e9f2a70a4f5614ffbce7424b",
+      "valid_matrix_sha256": "d606bb27238b4e0663aabf7e0dbe6148e64ed0beeae671e0ef0358667a189b87",
+      "train_rows_sha256": "c65bece7fe2b34f029583f5238a3d36cb54419d6724a5d034aa916fa8f458576",
+      "valid_rows_sha256": "ac460300fd88fe30c45a4ae18a4717fbb68e557f4cdfaeeebcdf128fa37090ba"
+    },
+    {
+      "key": "o5",
+      "stage": "outer",
+      "outer": 5,
+      "inner": 0,
+      "boundary": "2022-06-01 00:00:00",
+      "outer_boundary": "2022-06-01 00:00:00",
+      "fit_rows": 23034,
+      "valid_rows": 6730,
+      "encoded_columns": 214,
+      "train_matrix_sha256": "78571d543dc51baafa8ba0965a87cdf0b6ca32939fe2066996a6837fb6cf1e68",
+      "valid_matrix_sha256": "3197420d559bd3a0d3f36973bcf3052446c329ff4079b4c7a7681ad23082147d",
+      "train_rows_sha256": "864d5ec7c32813f70362601f8cd8dee2dd76f51f4552ed94be32f994e3bfaafa",
+      "valid_rows_sha256": "c6343e405125b65cfc5cb7ad3a59c952507b01df0f354444f1b675071306292e"
+    }
+  ],
+  "limits": [
+    "Retrospective: outer periods and dataset were previously inspected in earlier studies.",
+    "Frozen candidate spaces reflect prior development; this does not create an independent blind test.",
+    "Validates the shared-input seven-family selection procedure, not the old native-input CatBoost blend selection procedure.",
+    "Finite equal trial counts do not mean equal compute or exhaustive search."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "equivalent_id_cases": [
+    {
+      "anonymous": true,
+      "equivalent_inputs": 21,
+      "route": "anonymous fallback",
+      "equal_predictions": true
+    },
+    {
+      "anonymous": false,
+      "equivalent_inputs": 9,
+      "route": "personalized",
+      "equal_predictions": true
+    }
+  ],
+  "invalid_inputs_rejected": 4,
+  "model_bundle_unchanged": true,
+  "scope": "ID normalization and routing; no model refit or independent performance evaluation"
+}

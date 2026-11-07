@@ -1,0 +1,8 @@
+{
+  "matched_fold_fits": 35,
+  "common_rows_and_encoding_verified": true,
+  "matched_summary_values_verified": 28,
+  "ranking_and_tail_recomputed": true,
+  "tail_weighted_MAE_reconciled": true,
+  "primary_selection_unchanged": true
+}

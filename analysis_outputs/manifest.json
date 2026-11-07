@@ -1,0 +1,39 @@
+{
+  "selected_model": "CV Blend",
+  "primary_population": "identified users only",
+  "test_metrics": {
+    "R2": 0.5111153964029067,
+    "MAE": 6.842856885396072,
+    "RMSE": 9.799380483247608,
+    "MedAE": 4.530863187232862
+  },
+  "cv_R2": 0.5491285433584222,
+  "raw_rows": 72856,
+  "clean_context_rows": 69570,
+  "identified_rows": 40790,
+  "train_identified": 29775,
+  "test_identified": 10999,
+  "test_context": 17310,
+  "features": 137,
+  "test_start": "2022-07-19",
+  "bootstrap": {
+    "method": "Circular moving-block bootstrap of observed local dates",
+    "repeats": 2000,
+    "block_days": 7,
+    "seed": 42,
+    "R2_95pct": [
+      0.4990360497043509,
+      0.522680208720168
+    ],
+    "MAE_95pct_kWh": [
+      6.726541696235235,
+      6.968812919837009
+    ],
+    "MAE_gain_over_training_mean_95pct_kWh": [
+      4.026034392636236,
+      4.266293426176004
+    ],
+    "limits": "Conditional on this test window and selected model; does not remove selection or prior exploratory exposure."
+  },
+  "results_exploratory": true
+}

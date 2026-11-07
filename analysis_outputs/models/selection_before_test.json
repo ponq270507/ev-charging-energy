@@ -1,0 +1,234 @@
+{
+  "model": "CV Blend",
+  "cv_R2": 0.5491285433584222,
+  "cv_MAE": 6.448763036873042,
+  "features": [
+    "hour",
+    "dow",
+    "month",
+    "is_weekend",
+    "days_since_start",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "month_sin",
+    "month_cos",
+    "known_user",
+    "ChargerID",
+    "UserID",
+    "ChargerCompany",
+    "Location",
+    "ChargerType",
+    "global_log_count",
+    "global_energy_mean",
+    "global_energy_std",
+    "global_energy_last",
+    "global_energy_last3_mean",
+    "global_energy_last10_mean",
+    "global_energy_last10_median",
+    "global_duration_mean",
+    "global_duration_last",
+    "global_duration_last3_mean",
+    "global_duration_last10_median",
+    "global_power_last10_median",
+    "global_power_last3_mean",
+    "global_historical_max_energy",
+    "global_historical_min_energy",
+    "global_log_history_span_days",
+    "global_mean_cycle_days",
+    "global_days_since_label",
+    "global_relative_cycle_gap",
+    "global_gap_energy_proxy",
+    "charger_log_count",
+    "charger_energy_mean",
+    "charger_energy_std",
+    "charger_energy_last",
+    "charger_energy_last3_mean",
+    "charger_energy_last10_mean",
+    "charger_energy_last10_median",
+    "charger_duration_mean",
+    "charger_duration_last",
+    "charger_duration_last3_mean",
+    "charger_duration_last10_median",
+    "charger_power_last10_median",
+    "charger_power_last3_mean",
+    "charger_historical_max_energy",
+    "charger_historical_min_energy",
+    "charger_log_history_span_days",
+    "charger_mean_cycle_days",
+    "charger_days_since_label",
+    "charger_relative_cycle_gap",
+    "charger_gap_energy_proxy",
+    "user_log_count",
+    "user_energy_mean",
+    "user_energy_std",
+    "user_energy_last",
+    "user_energy_last3_mean",
+    "user_energy_last10_mean",
+    "user_energy_last10_median",
+    "user_duration_mean",
+    "user_duration_last",
+    "user_duration_last3_mean",
+    "user_duration_last10_median",
+    "user_power_last10_median",
+    "user_power_last3_mean",
+    "user_historical_max_energy",
+    "user_historical_min_energy",
+    "user_log_history_span_days",
+    "user_mean_cycle_days",
+    "user_days_since_label",
+    "user_relative_cycle_gap",
+    "user_gap_energy_proxy",
+    "charger_weekday_log_count",
+    "charger_weekday_energy_mean",
+    "charger_weekday_energy_std",
+    "charger_weekday_energy_last",
+    "charger_weekday_energy_last3_mean",
+    "charger_weekday_energy_last10_mean",
+    "charger_weekday_energy_last10_median",
+    "charger_weekday_duration_mean",
+    "charger_weekday_duration_last",
+    "charger_weekday_duration_last3_mean",
+    "charger_weekday_duration_last10_median",
+    "charger_weekday_power_last10_median",
+    "charger_weekday_power_last3_mean",
+    "charger_weekday_historical_max_energy",
+    "charger_weekday_historical_min_energy",
+    "charger_weekday_log_history_span_days",
+    "charger_weekday_mean_cycle_days",
+    "charger_weekday_days_since_label",
+    "charger_weekday_relative_cycle_gap",
+    "charger_weekday_gap_energy_proxy",
+    "user_weekday_log_count",
+    "user_weekday_energy_mean",
+    "user_weekday_energy_std",
+    "user_weekday_energy_last",
+    "user_weekday_energy_last3_mean",
+    "user_weekday_energy_last10_mean",
+    "user_weekday_energy_last10_median",
+    "user_weekday_duration_mean",
+    "user_weekday_duration_last",
+    "user_weekday_duration_last3_mean",
+    "user_weekday_duration_last10_median",
+    "user_weekday_power_last10_median",
+    "user_weekday_power_last3_mean",
+    "user_weekday_historical_max_energy",
+    "user_weekday_historical_min_energy",
+    "user_weekday_log_history_span_days",
+    "user_weekday_mean_cycle_days",
+    "user_weekday_days_since_label",
+    "user_weekday_relative_cycle_gap",
+    "user_weekday_gap_energy_proxy",
+    "user_charger_log_count",
+    "user_charger_energy_mean",
+    "user_charger_energy_std",
+    "user_charger_energy_last",
+    "user_charger_energy_last3_mean",
+    "user_charger_energy_last10_mean",
+    "user_charger_energy_last10_median",
+    "user_charger_duration_mean",
+    "user_charger_duration_last",
+    "user_charger_duration_last3_mean",
+    "user_charger_duration_last10_median",
+    "user_charger_power_last10_median",
+    "user_charger_power_last3_mean",
+    "user_charger_historical_max_energy",
+    "user_charger_historical_min_energy",
+    "user_charger_log_history_span_days",
+    "user_charger_mean_cycle_days",
+    "user_charger_days_since_label",
+    "user_charger_relative_cycle_gap",
+    "user_charger_gap_energy_proxy"
+  ],
+  "blend_parts": [
+    "CatBoost",
+    "CatBoost Tuned"
+  ],
+  "blend_weights": [
+    0.5,
+    0.5
+  ],
+  "eligible_specs": {
+    "CatBoost": {
+      "family": "catboost",
+      "params": {
+        "iterations": 500,
+        "depth": 6,
+        "learning_rate": 0.05,
+        "l2_leaf_reg": 20
+      }
+    },
+    "CatBoost Tuned": {
+      "family": "catboost",
+      "params": {
+        "learning_rate": 0.035,
+        "l2_leaf_reg": 10,
+        "iterations": 400,
+        "depth": 7
+      }
+    },
+    "Random Forest Tuned": {
+      "family": "rf",
+      "params": {
+        "n_estimators": 100,
+        "min_samples_leaf": 15,
+        "max_features": 0.65,
+        "max_depth": null
+      }
+    },
+    "Random Forest": {
+      "family": "rf",
+      "params": {
+        "n_estimators": 140,
+        "max_depth": 16,
+        "min_samples_leaf": 8,
+        "max_features": 0.85
+      }
+    },
+    "HGB": {
+      "family": "hgb",
+      "params": {
+        "max_iter": 260,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20,
+        "learning_rate": 0.05
+      }
+    },
+    "LightGBM": {
+      "family": "lgbm",
+      "params": {
+        "n_estimators": 700,
+        "num_leaves": 15,
+        "min_child_samples": 60,
+        "learning_rate": 0.03,
+        "reg_lambda": 20
+      }
+    },
+    "Ridge": {
+      "family": "ridge",
+      "params": {
+        "alpha": 100
+      }
+    },
+    "kNN": {
+      "family": "knn",
+      "params": {
+        "n_neighbors": 25,
+        "weights": "distance"
+      },
+      "training_cap": 12000
+    },
+    "Linear Regression": {
+      "family": "linear",
+      "params": {}
+    },
+    "Dummy Mean": {
+      "family": "dummy",
+      "params": {}
+    }
+  },
+  "test_errors_used_for_selection": false,
+  "protocol_note": "The same Korean final period appeared in an earlier coarse benchmark. These results are exploratory, not a newly blind test."
+}

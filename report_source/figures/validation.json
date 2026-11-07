@@ -1,0 +1,20 @@
+{
+  "library": "matplotlib",
+  "version": "3.10.8",
+  "annotation_xy": [
+    23,
+    1669
+  ],
+  "annotation_offset_points": [
+    0,
+    32
+  ],
+  "xlim": [
+    -0.6,
+    23.6
+  ],
+  "bars_overlapping_label": [],
+  "total_sessions": 69570,
+  "export": "direct savefig PDF",
+  "report_page_imported": false
+}

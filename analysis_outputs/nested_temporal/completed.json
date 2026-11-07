@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-10-22T10:19:55.510220+00:00",
+  "actual_fits": 595,
+  "protocol_sha256": "719975f5f2cc37418090b91f36464c01276f5f711ad4b471f760d3696ddc2f43",
+  "selection_sha256": "704375a3ed28c56012a1ed1cd5f4ea61e58cc4abee8d14b5d86d095f26e178aa",
+  "all_fit_metrics_sha256": "0259b372efd8f0ee7901eff10bab365e6ed49c4001ae8414554239ba4ed83071",
+  "primary_model_unchanged": true,
+  "independent_test_created": false
+}

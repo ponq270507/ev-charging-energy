@@ -1,0 +1,15 @@
+{
+  "raw_predictors": 136,
+  "excluded": "raw UserID only; personal histories retained",
+  "encoding": "common numeric median imputation and standardization; common dense one-hot of all four categories",
+  "onehot_min_frequency": 10,
+  "onehot_max_categories": 64,
+  "same_training_rows_for_all": true,
+  "knn_training_cap": null,
+  "folds": 5,
+  "selection_changed": false,
+  "seed": 42,
+  "purpose": "post-review development-only controlled representation comparison; no test selection",
+  "source_sha256": "d541259bed55e2a9bc3413756954e7a059b50f9c9031f1dfc6ec87cbf3afd358",
+  "code_sha256": "011989920c9d96ae30c2381c2f062cd5d6fd96f4ad7958a5afe1144f116557e3"
+}

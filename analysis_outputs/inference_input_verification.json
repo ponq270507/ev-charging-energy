@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "invariance_checks": [
+    "Korean naive / UTC aware / mixed query instants agree, including the completed feed",
+    "Equivalent string/integer-valued float metadata codes agree",
+    "Duplicate/reordered feed and repeated development records are idempotent",
+    "Future event labels and metadata cannot change earlier predictions"
+  ],
+  "invalid_cases_rejected": [
+    "completed Demand=0",
+    "completed Demand=inf",
+    "completed Duration=-1",
+    "completed StartDatetime=NaT",
+    "completed EndDatetime=2022-09-30 14:47:00",
+    "completed Duration=32",
+    "conflicting duplicate outcome",
+    "source_row reused for another event",
+    "missing arrival time",
+    "arrival before fitting cutoff"
+  ],
+  "source_and_model_unchanged": true,
+  "scope": "Functional inference boundaries; no independent evaluation or retraining"
+}

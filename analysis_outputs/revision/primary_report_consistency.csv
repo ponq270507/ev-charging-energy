@@ -1,0 +1,11 @@
+item,computed,report,matches
+raw_rows,72856.0,72856.0,True
+clean_rows,69570.0,69570.0,True
+identified_rows,40790.0,40790.0,True
+train_identified,29775.0,29775.0,True
+test_identified,10999.0,10999.0,True
+features,137.0,137.0,True
+R2,0.5111153964029067,0.511,True
+MAE,6.842856885396072,6.843,True
+RMSE,9.799380483247608,9.799,True
+MedAE,4.530863187232862,4.531,True

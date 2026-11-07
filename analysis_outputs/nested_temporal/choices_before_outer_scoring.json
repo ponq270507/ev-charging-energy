@@ -1,0 +1,491 @@
+{
+  "created_utc": "2026-10-22T10:17:13.831717+00:00",
+  "outer_scores_used_for_selection": false,
+  "choices": [
+    {
+      "outer": 1,
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 6,
+      "inner_R2": 0.5043315382930651,
+      "inner_MAE": 6.470199641588599,
+      "params": {
+        "depth": 6,
+        "iterations": 500,
+        "l2_leaf_reg": 20,
+        "learning_rate": 0.035
+      },
+      "selected_family": true
+    },
+    {
+      "outer": 1,
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 6,
+      "inner_R2": 0.4886822014775312,
+      "inner_MAE": 6.571652688961272,
+      "params": {
+        "l2_regularization": 50,
+        "learning_rate": 0.03,
+        "max_iter": 260,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 60
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 1,
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 3,
+      "inner_R2": 0.4732681044829244,
+      "inner_MAE": 6.71560118340783,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 450,
+        "num_leaves": 15,
+        "reg_lambda": 5
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 1,
+      "model": "Linear Regression",
+      "family": "linear",
+      "trial": 1,
+      "inner_R2": -0.7992506160982248,
+      "inner_MAE": 12.291629501226504,
+      "params": {},
+      "selected_family": false
+    },
+    {
+      "outer": 1,
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 3,
+      "inner_R2": 0.4929792449500801,
+      "inner_MAE": 6.532079974918271,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.65,
+        "min_samples_leaf": 8,
+        "n_estimators": 140
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 1,
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 4,
+      "inner_R2": 0.44353319088104576,
+      "inner_MAE": 6.999801217502853,
+      "params": {
+        "alpha": 1000
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 1,
+      "model": "kNN",
+      "family": "knn",
+      "trial": 1,
+      "inner_R2": 0.424763970804884,
+      "inner_MAE": 7.07222038424922,
+      "params": {
+        "n_neighbors": 25,
+        "weights": "distance"
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 2,
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 4,
+      "inner_R2": 0.5375298221511332,
+      "inner_MAE": 6.456353292530648,
+      "params": {
+        "depth": 6,
+        "iterations": 700,
+        "l2_leaf_reg": 30,
+        "learning_rate": 0.035
+      },
+      "selected_family": true
+    },
+    {
+      "outer": 2,
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 6,
+      "inner_R2": 0.5264826838710724,
+      "inner_MAE": 6.557687376625732,
+      "params": {
+        "l2_regularization": 50,
+        "learning_rate": 0.03,
+        "max_iter": 260,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 60
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 2,
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 3,
+      "inner_R2": 0.5244793620912417,
+      "inner_MAE": 6.591086133425197,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 450,
+        "num_leaves": 15,
+        "reg_lambda": 5
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 2,
+      "model": "Linear Regression",
+      "family": "linear",
+      "trial": 1,
+      "inner_R2": -0.2822284154404068,
+      "inner_MAE": 11.312901348029184,
+      "params": {},
+      "selected_family": false
+    },
+    {
+      "outer": 2,
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 3,
+      "inner_R2": 0.5355842680303247,
+      "inner_MAE": 6.400861477338229,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.65,
+        "min_samples_leaf": 8,
+        "n_estimators": 140
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 2,
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 3,
+      "inner_R2": 0.47382551283591673,
+      "inner_MAE": 6.921621348110818,
+      "params": {
+        "alpha": 10000
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 2,
+      "model": "kNN",
+      "family": "knn",
+      "trial": 5,
+      "inner_R2": 0.4479813263988997,
+      "inner_MAE": 7.128775289371728,
+      "params": {
+        "n_neighbors": 15,
+        "weights": "distance"
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 3,
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 3,
+      "inner_R2": 0.5131980143731906,
+      "inner_MAE": 6.627008328353271,
+      "params": {
+        "depth": 7,
+        "iterations": 400,
+        "l2_leaf_reg": 30,
+        "learning_rate": 0.06
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 3,
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 6,
+      "inner_R2": 0.5119659734104948,
+      "inner_MAE": 6.66522144842374,
+      "params": {
+        "l2_regularization": 50,
+        "learning_rate": 0.03,
+        "max_iter": 260,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 60
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 3,
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 3,
+      "inner_R2": 0.5057045391255924,
+      "inner_MAE": 6.7014453521377675,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 450,
+        "num_leaves": 15,
+        "reg_lambda": 5
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 3,
+      "model": "Linear Regression",
+      "family": "linear",
+      "trial": 1,
+      "inner_R2": 0.18378516386539978,
+      "inner_MAE": 8.54233743704638,
+      "params": {},
+      "selected_family": false
+    },
+    {
+      "outer": 3,
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 1,
+      "inner_R2": 0.5178392383666404,
+      "inner_MAE": 6.565626392046884,
+      "params": {
+        "n_estimators": 140,
+        "max_depth": 16,
+        "min_samples_leaf": 8,
+        "max_features": 0.85
+      },
+      "selected_family": true
+    },
+    {
+      "outer": 3,
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 4,
+      "inner_R2": 0.4987829921613917,
+      "inner_MAE": 6.799564600275769,
+      "params": {
+        "alpha": 1000
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 3,
+      "model": "kNN",
+      "family": "knn",
+      "trial": 1,
+      "inner_R2": 0.43859688687964926,
+      "inner_MAE": 7.228730086595534,
+      "params": {
+        "n_neighbors": 25,
+        "weights": "distance"
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 4,
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 6,
+      "inner_R2": 0.5331889633084836,
+      "inner_MAE": 6.576107266357252,
+      "params": {
+        "depth": 6,
+        "iterations": 500,
+        "l2_leaf_reg": 20,
+        "learning_rate": 0.035
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 4,
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 6,
+      "inner_R2": 0.5305627923451325,
+      "inner_MAE": 6.628346499080109,
+      "params": {
+        "l2_regularization": 50,
+        "learning_rate": 0.03,
+        "max_iter": 260,
+        "max_leaf_nodes": 7,
+        "min_samples_leaf": 60
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 4,
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 3,
+      "inner_R2": 0.5285381591043677,
+      "inner_MAE": 6.6144014117707615,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 450,
+        "num_leaves": 15,
+        "reg_lambda": 5
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 4,
+      "model": "Linear Regression",
+      "family": "linear",
+      "trial": 1,
+      "inner_R2": -0.10143332623916516,
+      "inner_MAE": 9.889470100776473,
+      "params": {},
+      "selected_family": false
+    },
+    {
+      "outer": 4,
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 3,
+      "inner_R2": 0.5337671645394524,
+      "inner_MAE": 6.525985957703913,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.65,
+        "min_samples_leaf": 8,
+        "n_estimators": 140
+      },
+      "selected_family": true
+    },
+    {
+      "outer": 4,
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 4,
+      "inner_R2": 0.5072849759412784,
+      "inner_MAE": 6.852032803921479,
+      "params": {
+        "alpha": 1000
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 4,
+      "model": "kNN",
+      "family": "knn",
+      "trial": 1,
+      "inner_R2": 0.4512278332154609,
+      "inner_MAE": 7.276003065306697,
+      "params": {
+        "n_neighbors": 25,
+        "weights": "distance"
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 5,
+      "model": "CatBoost",
+      "family": "catboost",
+      "trial": 4,
+      "inner_R2": 0.5353761778456948,
+      "inner_MAE": 6.595984151859014,
+      "params": {
+        "depth": 6,
+        "iterations": 700,
+        "l2_leaf_reg": 30,
+        "learning_rate": 0.035
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 5,
+      "model": "HGB",
+      "family": "hgb",
+      "trial": 1,
+      "inner_R2": 0.540530123681845,
+      "inner_MAE": 6.462257852962807,
+      "params": {
+        "max_iter": 260,
+        "max_leaf_nodes": 15,
+        "min_samples_leaf": 30,
+        "l2_regularization": 20,
+        "learning_rate": 0.05
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 5,
+      "model": "LightGBM",
+      "family": "lgbm",
+      "trial": 3,
+      "inner_R2": 0.5390383542764513,
+      "inner_MAE": 6.478501175764534,
+      "params": {
+        "learning_rate": 0.03,
+        "min_child_samples": 120,
+        "n_estimators": 450,
+        "num_leaves": 15,
+        "reg_lambda": 5
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 5,
+      "model": "Linear Regression",
+      "family": "linear",
+      "trial": 1,
+      "inner_R2": -0.24832365912212764,
+      "inner_MAE": 10.553950535017124,
+      "params": {},
+      "selected_family": false
+    },
+    {
+      "outer": 5,
+      "model": "Random Forest",
+      "family": "rf",
+      "trial": 3,
+      "inner_R2": 0.5439317650145353,
+      "inner_MAE": 6.417460544256913,
+      "params": {
+        "max_depth": 16,
+        "max_features": 0.65,
+        "min_samples_leaf": 8,
+        "n_estimators": 140
+      },
+      "selected_family": true
+    },
+    {
+      "outer": 5,
+      "model": "Ridge",
+      "family": "ridge",
+      "trial": 3,
+      "inner_R2": 0.5150752278983753,
+      "inner_MAE": 6.735646493920874,
+      "params": {
+        "alpha": 10000
+      },
+      "selected_family": false
+    },
+    {
+      "outer": 5,
+      "model": "kNN",
+      "family": "knn",
+      "trial": 1,
+      "inner_R2": 0.46874764035947575,
+      "inner_MAE": 7.109133472650979,
+      "params": {
+        "n_neighbors": 25,
+        "weights": "distance"
+      },
+      "selected_family": false
+    }
+  ]
+}
