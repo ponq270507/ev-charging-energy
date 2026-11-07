@@ -1,0 +1,44 @@
+{
+  "package_id": "group25-rebuild-2026-11-06",
+  "created_local_date": "2026-11-06",
+  "base_notebook": "newly supplied Desktop/1 notebook; 37 cells before rebuild",
+  "inputs": {
+    "workbook": {
+      "path": "data/ChargingRecords.xlsx",
+      "sha256": "c32fbc20c3cad0fbcc8d5aa5c9db679640192ba66a7c9c652dcf3c5bd8aa498b"
+    },
+    "notebook_base": {
+      "path": "EV_Charging_Arrival_Prediction_Group25_Revised.ipynb",
+      "sha256": "a3e4a883351986cf35561ae178eed543ff618a0ac8d00318cd7310f809476904"
+    },
+    "canonical_csv": {
+      "path": "data/ChargingRecords_original.csv",
+      "sha256": "d541259bed55e2a9bc3413756954e7a059b50f9c9031f1dfc6ec87cbf3afd358"
+    }
+  },
+  "reused_from_previous_package": [
+    "arrival_history.py",
+    "train_arrival.py",
+    "study_plots.py",
+    "predict_arrival.py",
+    "importance_diagnostics.py",
+    "revision_checks.py",
+    "report_alignment.py",
+    "feedback_checks.py",
+    "verify_feedback.py",
+    "verify_results.py",
+    "balanced_search.py",
+    "verify_balanced_search.py",
+    "nested_temporal.py",
+    "verify_nested_temporal.py",
+    "verify_inference_ids.py",
+    "verify_inference_inputs.py",
+    "canonical CSV",
+    "fitted model bundle",
+    "saved predictions/experiment protocols"
+  ],
+  "inherited_model_sha256": "82773453c72bc2ab54c40dea2c2b6aa83d4c9f11faf6061c8baf0fa303e8dcea",
+  "new_model_training_performed": false,
+  "original_report_pdf_bundled": false,
+  "core_protocol_hashed_modules_changed": false
+}

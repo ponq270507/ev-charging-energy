@@ -1,0 +1,38 @@
+{
+  "source_url": "https://doi.org/10.6084/m9.figshare.22495141.v1",
+  "paper_url": "https://doi.org/10.1038/s41597-024-02942-9",
+  "source_sha256": "d541259bed55e2a9bc3413756954e7a059b50f9c9031f1dfc6ec87cbf3afd358",
+  "raw_rows": 72856,
+  "clean_rows": 69570,
+  "quarantine_rows": 3286,
+  "overlapping_rule_counts": {
+    "exact_duplicate": 13,
+    "invalid_timestamp": 0,
+    "nonpositive_elapsed": 547,
+    "invalid_energy": 0,
+    "invalid_duration": 735,
+    "duration_timestamp_disagreement_over_2min": 2564
+  },
+  "energy_unit": "kWh (source Table 7)",
+  "duration_unit": "minutes of connection (source Table 7)",
+  "time_convention": "Recorded South Korean civil times; no invented UTC conversion.",
+  "duration_tolerance_minutes": 2,
+  "label_availability_buffer_seconds": 60,
+  "user_zero": "Anonymous/non-member group; never pool personal history for ID 0.",
+  "no_target_capping": true,
+  "columns_actually_supplied": [
+    "UserID",
+    "ChargerID",
+    "ChargerCompany",
+    "Location",
+    "ChargerType",
+    "StartDay",
+    "StartTime",
+    "EndDay",
+    "EndTime",
+    "StartDatetime",
+    "EndDatetime",
+    "Duration",
+    "Demand"
+  ]
+}
