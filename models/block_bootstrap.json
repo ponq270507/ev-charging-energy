@@ -1,0 +1,19 @@
+{
+  "method": "Circular moving-block bootstrap of observed local dates",
+  "repeats": 2000,
+  "block_days": 7,
+  "seed": 42,
+  "R2_95pct": [
+    0.4990360497043509,
+    0.522680208720168
+  ],
+  "MAE_95pct_kWh": [
+    6.726541696235235,
+    6.968812919837009
+  ],
+  "MAE_gain_over_training_mean_95pct_kWh": [
+    4.026034392636236,
+    4.266293426176004
+  ],
+  "limits": "Conditional on this test window and selected model; does not remove selection or prior exploratory exposure."
+}

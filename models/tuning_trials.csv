@@ -1,0 +1,13 @@
+family,trial,cv_R2,parameters
+CatBoost,1,0.5465688651221703,"{""learning_rate"": 0.035, ""l2_leaf_reg"": 10, ""iterations"": 400, ""depth"": 6}"
+CatBoost,2,0.5471085488158297,"{""learning_rate"": 0.035, ""l2_leaf_reg"": 10, ""iterations"": 400, ""depth"": 7}"
+CatBoost,3,0.5439777479115253,"{""learning_rate"": 0.035, ""l2_leaf_reg"": 10, ""iterations"": 400, ""depth"": 5}"
+CatBoost,4,0.5461093943206332,"{""learning_rate"": 0.035, ""l2_leaf_reg"": 30, ""iterations"": 400, ""depth"": 7}"
+CatBoost,5,0.5468916884568602,"{""learning_rate"": 0.06, ""l2_leaf_reg"": 30, ""iterations"": 400, ""depth"": 6}"
+CatBoost,6,0.5451786737738855,"{""learning_rate"": 0.06, ""l2_leaf_reg"": 10, ""iterations"": 400, ""depth"": 6}"
+Random Forest,1,0.5418554556942177,"{""n_estimators"": 180, ""min_samples_leaf"": 40, ""max_features"": 1.0, ""max_depth"": null}"
+Random Forest,2,0.5455989543528037,"{""n_estimators"": 180, ""min_samples_leaf"": 5, ""max_features"": 0.65, ""max_depth"": 16}"
+Random Forest,3,0.5469762934468461,"{""n_estimators"": 100, ""min_samples_leaf"": 15, ""max_features"": 0.65, ""max_depth"": null}"
+Random Forest,4,0.5403352807125004,"{""n_estimators"": 100, ""min_samples_leaf"": 5, ""max_features"": 1.0, ""max_depth"": null}"
+Random Forest,5,0.5422038457126432,"{""n_estimators"": 100, ""min_samples_leaf"": 40, ""max_features"": 0.65, ""max_depth"": 16}"
+Random Forest,6,0.5426166551940705,"{""n_estimators"": 180, ""min_samples_leaf"": 5, ""max_features"": 1.0, ""max_depth"": null}"

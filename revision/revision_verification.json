@@ -1,0 +1,8 @@
+{
+  "primary_predictions_reconstructed_from_raw_history": true,
+  "baseline_reconstructed_from_raw_history": true,
+  "all_five_delay_scores_recomputed": true,
+  "delay_fit_counts_repurg_checked": true,
+  "added_cv_summaries_reconciled": true,
+  "full_feature_dictionary_checked": true
+}

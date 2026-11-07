@@ -1,0 +1,138 @@
+feature,type,availability,definition,unit
+hour,numeric,arrival timestamp or registered metadata,hour,calendar/status
+dow,numeric,arrival timestamp or registered metadata,dow,calendar/status
+month,numeric,arrival timestamp or registered metadata,month,calendar/status
+is_weekend,numeric,arrival timestamp or registered metadata,is_weekend,calendar/status
+days_since_start,numeric,arrival timestamp or registered metadata,days_since_start,calendar/status
+hour_sin,numeric,arrival timestamp or registered metadata,hour_sin,calendar/status
+hour_cos,numeric,arrival timestamp or registered metadata,hour_cos,calendar/status
+dow_sin,numeric,arrival timestamp or registered metadata,dow_sin,calendar/status
+dow_cos,numeric,arrival timestamp or registered metadata,dow_cos,calendar/status
+month_sin,numeric,arrival timestamp or registered metadata,month_sin,calendar/status
+month_cos,numeric,arrival timestamp or registered metadata,month_cos,calendar/status
+known_user,numeric,arrival timestamp or registered metadata,known_user,calendar/status
+ChargerID,categorical,arrival timestamp or registered metadata,ChargerID,category
+UserID,categorical,arrival timestamp or registered metadata,UserID,category
+ChargerCompany,categorical,arrival timestamp or registered metadata,ChargerCompany,category
+Location,categorical,arrival timestamp or registered metadata,Location,category
+ChargerType,categorical,arrival timestamp or registered metadata,ChargerType,category
+global_log_count,numeric,previous EndDatetime + reporting delay < arrival,global: log1p(completed count),dimensionless
+global_energy_mean,numeric,previous EndDatetime + reporting delay < arrival,global: cumulative completed energy mean,kWh
+global_energy_std,numeric,previous EndDatetime + reporting delay < arrival,global: population SD of completed energy,kWh
+global_energy_last,numeric,previous EndDatetime + reporting delay < arrival,global: most recently available energy,kWh
+global_energy_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,global: mean of up to last 3 energies,kWh
+global_energy_last10_mean,numeric,previous EndDatetime + reporting delay < arrival,global: mean of up to last 10 energies,kWh
+global_energy_last10_median,numeric,previous EndDatetime + reporting delay < arrival,global: median of up to last 10 energies,kWh
+global_duration_mean,numeric,previous EndDatetime + reporting delay < arrival,global: cumulative mean connection duration,hours
+global_duration_last,numeric,previous EndDatetime + reporting delay < arrival,global: most recent connection duration,hours
+global_duration_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,global: mean of up to last 3 connection durations,hours
+global_duration_last10_median,numeric,previous EndDatetime + reporting delay < arrival,global: median of up to last 10 connection durations,hours
+global_power_last10_median,numeric,previous EndDatetime + reporting delay < arrival,global: median energy/connection-hours over last 10,kW proxy
+global_power_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,global: mean energy/connection-hours over last 3,kW proxy
+global_historical_max_energy,numeric,previous EndDatetime + reporting delay < arrival,global: maximum eligible completed energy,kWh
+global_historical_min_energy,numeric,previous EndDatetime + reporting delay < arrival,global: minimum eligible completed energy,kWh
+global_log_history_span_days,numeric,previous EndDatetime + reporting delay < arrival,global: log1p(days from first to last availability),dimensionless
+global_mean_cycle_days,numeric,previous EndDatetime + reporting delay < arrival,"global: availability span/(count-1), if positive",days
+global_days_since_label,numeric,previous EndDatetime + reporting delay < arrival,global: arrival minus latest label availability,days
+global_relative_cycle_gap,numeric,previous EndDatetime + reporting delay < arrival,global: days_since_label/mean_cycle_days,dimensionless
+global_gap_energy_proxy,numeric,previous EndDatetime + reporting delay < arrival,"global: min(max energy, mean energy * relative gap)",kWh heuristic
+charger_log_count,numeric,previous EndDatetime + reporting delay < arrival,charger: log1p(completed count),dimensionless
+charger_energy_mean,numeric,previous EndDatetime + reporting delay < arrival,charger: cumulative completed energy mean,kWh
+charger_energy_std,numeric,previous EndDatetime + reporting delay < arrival,charger: population SD of completed energy,kWh
+charger_energy_last,numeric,previous EndDatetime + reporting delay < arrival,charger: most recently available energy,kWh
+charger_energy_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,charger: mean of up to last 3 energies,kWh
+charger_energy_last10_mean,numeric,previous EndDatetime + reporting delay < arrival,charger: mean of up to last 10 energies,kWh
+charger_energy_last10_median,numeric,previous EndDatetime + reporting delay < arrival,charger: median of up to last 10 energies,kWh
+charger_duration_mean,numeric,previous EndDatetime + reporting delay < arrival,charger: cumulative mean connection duration,hours
+charger_duration_last,numeric,previous EndDatetime + reporting delay < arrival,charger: most recent connection duration,hours
+charger_duration_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,charger: mean of up to last 3 connection durations,hours
+charger_duration_last10_median,numeric,previous EndDatetime + reporting delay < arrival,charger: median of up to last 10 connection durations,hours
+charger_power_last10_median,numeric,previous EndDatetime + reporting delay < arrival,charger: median energy/connection-hours over last 10,kW proxy
+charger_power_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,charger: mean energy/connection-hours over last 3,kW proxy
+charger_historical_max_energy,numeric,previous EndDatetime + reporting delay < arrival,charger: maximum eligible completed energy,kWh
+charger_historical_min_energy,numeric,previous EndDatetime + reporting delay < arrival,charger: minimum eligible completed energy,kWh
+charger_log_history_span_days,numeric,previous EndDatetime + reporting delay < arrival,charger: log1p(days from first to last availability),dimensionless
+charger_mean_cycle_days,numeric,previous EndDatetime + reporting delay < arrival,"charger: availability span/(count-1), if positive",days
+charger_days_since_label,numeric,previous EndDatetime + reporting delay < arrival,charger: arrival minus latest label availability,days
+charger_relative_cycle_gap,numeric,previous EndDatetime + reporting delay < arrival,charger: days_since_label/mean_cycle_days,dimensionless
+charger_gap_energy_proxy,numeric,previous EndDatetime + reporting delay < arrival,"charger: min(max energy, mean energy * relative gap)",kWh heuristic
+user_log_count,numeric,previous EndDatetime + reporting delay < arrival,user: log1p(completed count),dimensionless
+user_energy_mean,numeric,previous EndDatetime + reporting delay < arrival,user: cumulative completed energy mean,kWh
+user_energy_std,numeric,previous EndDatetime + reporting delay < arrival,user: population SD of completed energy,kWh
+user_energy_last,numeric,previous EndDatetime + reporting delay < arrival,user: most recently available energy,kWh
+user_energy_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user: mean of up to last 3 energies,kWh
+user_energy_last10_mean,numeric,previous EndDatetime + reporting delay < arrival,user: mean of up to last 10 energies,kWh
+user_energy_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user: median of up to last 10 energies,kWh
+user_duration_mean,numeric,previous EndDatetime + reporting delay < arrival,user: cumulative mean connection duration,hours
+user_duration_last,numeric,previous EndDatetime + reporting delay < arrival,user: most recent connection duration,hours
+user_duration_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user: mean of up to last 3 connection durations,hours
+user_duration_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user: median of up to last 10 connection durations,hours
+user_power_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user: median energy/connection-hours over last 10,kW proxy
+user_power_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user: mean energy/connection-hours over last 3,kW proxy
+user_historical_max_energy,numeric,previous EndDatetime + reporting delay < arrival,user: maximum eligible completed energy,kWh
+user_historical_min_energy,numeric,previous EndDatetime + reporting delay < arrival,user: minimum eligible completed energy,kWh
+user_log_history_span_days,numeric,previous EndDatetime + reporting delay < arrival,user: log1p(days from first to last availability),dimensionless
+user_mean_cycle_days,numeric,previous EndDatetime + reporting delay < arrival,"user: availability span/(count-1), if positive",days
+user_days_since_label,numeric,previous EndDatetime + reporting delay < arrival,user: arrival minus latest label availability,days
+user_relative_cycle_gap,numeric,previous EndDatetime + reporting delay < arrival,user: days_since_label/mean_cycle_days,dimensionless
+user_gap_energy_proxy,numeric,previous EndDatetime + reporting delay < arrival,"user: min(max energy, mean energy * relative gap)",kWh heuristic
+charger_weekday_log_count,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: log1p(completed count),dimensionless
+charger_weekday_energy_mean,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: cumulative completed energy mean,kWh
+charger_weekday_energy_std,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: population SD of completed energy,kWh
+charger_weekday_energy_last,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: most recently available energy,kWh
+charger_weekday_energy_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: mean of up to last 3 energies,kWh
+charger_weekday_energy_last10_mean,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: mean of up to last 10 energies,kWh
+charger_weekday_energy_last10_median,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: median of up to last 10 energies,kWh
+charger_weekday_duration_mean,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: cumulative mean connection duration,hours
+charger_weekday_duration_last,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: most recent connection duration,hours
+charger_weekday_duration_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: mean of up to last 3 connection durations,hours
+charger_weekday_duration_last10_median,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: median of up to last 10 connection durations,hours
+charger_weekday_power_last10_median,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: median energy/connection-hours over last 10,kW proxy
+charger_weekday_power_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: mean energy/connection-hours over last 3,kW proxy
+charger_weekday_historical_max_energy,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: maximum eligible completed energy,kWh
+charger_weekday_historical_min_energy,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: minimum eligible completed energy,kWh
+charger_weekday_log_history_span_days,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: log1p(days from first to last availability),dimensionless
+charger_weekday_mean_cycle_days,numeric,previous EndDatetime + reporting delay < arrival,"charger_weekday: availability span/(count-1), if positive",days
+charger_weekday_days_since_label,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: arrival minus latest label availability,days
+charger_weekday_relative_cycle_gap,numeric,previous EndDatetime + reporting delay < arrival,charger_weekday: days_since_label/mean_cycle_days,dimensionless
+charger_weekday_gap_energy_proxy,numeric,previous EndDatetime + reporting delay < arrival,"charger_weekday: min(max energy, mean energy * relative gap)",kWh heuristic
+user_weekday_log_count,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: log1p(completed count),dimensionless
+user_weekday_energy_mean,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: cumulative completed energy mean,kWh
+user_weekday_energy_std,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: population SD of completed energy,kWh
+user_weekday_energy_last,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: most recently available energy,kWh
+user_weekday_energy_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: mean of up to last 3 energies,kWh
+user_weekday_energy_last10_mean,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: mean of up to last 10 energies,kWh
+user_weekday_energy_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: median of up to last 10 energies,kWh
+user_weekday_duration_mean,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: cumulative mean connection duration,hours
+user_weekday_duration_last,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: most recent connection duration,hours
+user_weekday_duration_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: mean of up to last 3 connection durations,hours
+user_weekday_duration_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: median of up to last 10 connection durations,hours
+user_weekday_power_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: median energy/connection-hours over last 10,kW proxy
+user_weekday_power_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: mean energy/connection-hours over last 3,kW proxy
+user_weekday_historical_max_energy,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: maximum eligible completed energy,kWh
+user_weekday_historical_min_energy,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: minimum eligible completed energy,kWh
+user_weekday_log_history_span_days,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: log1p(days from first to last availability),dimensionless
+user_weekday_mean_cycle_days,numeric,previous EndDatetime + reporting delay < arrival,"user_weekday: availability span/(count-1), if positive",days
+user_weekday_days_since_label,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: arrival minus latest label availability,days
+user_weekday_relative_cycle_gap,numeric,previous EndDatetime + reporting delay < arrival,user_weekday: days_since_label/mean_cycle_days,dimensionless
+user_weekday_gap_energy_proxy,numeric,previous EndDatetime + reporting delay < arrival,"user_weekday: min(max energy, mean energy * relative gap)",kWh heuristic
+user_charger_log_count,numeric,previous EndDatetime + reporting delay < arrival,user_charger: log1p(completed count),dimensionless
+user_charger_energy_mean,numeric,previous EndDatetime + reporting delay < arrival,user_charger: cumulative completed energy mean,kWh
+user_charger_energy_std,numeric,previous EndDatetime + reporting delay < arrival,user_charger: population SD of completed energy,kWh
+user_charger_energy_last,numeric,previous EndDatetime + reporting delay < arrival,user_charger: most recently available energy,kWh
+user_charger_energy_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user_charger: mean of up to last 3 energies,kWh
+user_charger_energy_last10_mean,numeric,previous EndDatetime + reporting delay < arrival,user_charger: mean of up to last 10 energies,kWh
+user_charger_energy_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user_charger: median of up to last 10 energies,kWh
+user_charger_duration_mean,numeric,previous EndDatetime + reporting delay < arrival,user_charger: cumulative mean connection duration,hours
+user_charger_duration_last,numeric,previous EndDatetime + reporting delay < arrival,user_charger: most recent connection duration,hours
+user_charger_duration_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user_charger: mean of up to last 3 connection durations,hours
+user_charger_duration_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user_charger: median of up to last 10 connection durations,hours
+user_charger_power_last10_median,numeric,previous EndDatetime + reporting delay < arrival,user_charger: median energy/connection-hours over last 10,kW proxy
+user_charger_power_last3_mean,numeric,previous EndDatetime + reporting delay < arrival,user_charger: mean energy/connection-hours over last 3,kW proxy
+user_charger_historical_max_energy,numeric,previous EndDatetime + reporting delay < arrival,user_charger: maximum eligible completed energy,kWh
+user_charger_historical_min_energy,numeric,previous EndDatetime + reporting delay < arrival,user_charger: minimum eligible completed energy,kWh
+user_charger_log_history_span_days,numeric,previous EndDatetime + reporting delay < arrival,user_charger: log1p(days from first to last availability),dimensionless
+user_charger_mean_cycle_days,numeric,previous EndDatetime + reporting delay < arrival,"user_charger: availability span/(count-1), if positive",days
+user_charger_days_since_label,numeric,previous EndDatetime + reporting delay < arrival,user_charger: arrival minus latest label availability,days
+user_charger_relative_cycle_gap,numeric,previous EndDatetime + reporting delay < arrival,user_charger: days_since_label/mean_cycle_days,dimensionless
+user_charger_gap_energy_proxy,numeric,previous EndDatetime + reporting delay < arrival,"user_charger: min(max energy, mean energy * relative gap)",kWh heuristic

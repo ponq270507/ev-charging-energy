@@ -1,0 +1,44 @@
+item,computed,report,matches
+User mean cv_R2,0.4513965289398561,0.451,True
+User mean cv_R2_sd,0.0315565170960971,0.032,True
+User mean cv_MAE,6.993420700200282,6.993,True
+User mean cv_RMSE,10.118508329725003,10.119,True
+User mean R2,0.376512503022457,0.377,True
+User mean MAE,7.809173685302829,7.809,True
+User mean RMSE,11.066475190928234,11.066,True
+User mean MedAE,5.17455132484436,5.175,True
+User history available,10439.0,10439.0,True
+User history fallback,560.0,560.0,True
+"All history, without raw UserID columns",136.0,136.0,True
+"All history, without raw UserID R2",0.5341031600306636,0.534,True
+"All history, without raw UserID MAE",6.528708005365365,6.529,True
+"Nonpersonal history, without UserID columns",76.0,76.0,True
+"Nonpersonal history, without UserID R2",0.299514519285982,0.3,True
+"Nonpersonal history, without UserID MAE",8.283213013224438,8.283,True
+Delay 0 fit rows,29775.0,29775.0,True
+Delay 0 R2,0.5140067970337701,0.514,True
+Delay 0 MAE,6.831217265336986,6.831,True
+Delay 60 fit rows,29775.0,29775.0,True
+Delay 60 R2,0.5111153964029067,0.511,True
+Delay 60 MAE,6.842856885396072,6.843,True
+Delay 300 fit rows,29775.0,29775.0,True
+Delay 300 R2,0.5095387275098431,0.51,True
+Delay 300 MAE,6.863087334712863,6.863,True
+Delay 3600 fit rows,29772.0,29772.0,True
+Delay 3600 R2,0.5068889833597328,0.507,True
+Delay 3600 MAE,6.901556967838717,6.902,True
+Delay 86400 fit rows,29618.0,29618.0,True
+Delay 86400 R2,0.4985806949143676,0.499,True
+Delay 86400 MAE,7.00711791310942,7.007,True
+User historical mean MAE gain,0.9663167999067568,0.966,True
+User historical mean gain CI lower,0.8778203555313037,0.878,True
+User historical mean gain CI upper,1.0717240273969857,1.072,True
+CatBoost MAE gain,0.010566044607474,0.011,True
+CatBoost gain CI lower,0.0012503575678762,0.001,True
+CatBoost gain CI upper,0.0197376028692619,0.02,True
+Dummy Mean gain CI lower,4.026034392636236,4.026,True
+Dummy Mean gain CI upper,4.266293426176004,4.266,True
+Permutation user history,0.3043177649669999,0.304,True
+Permutation user_charger history,0.0854894818537281,0.085,True
+Permutation Calendar,0.039645865962012,0.04,True
+Permutation charger history,0.0222050641702303,0.022,True

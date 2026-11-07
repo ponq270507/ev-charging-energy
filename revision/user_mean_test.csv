@@ -1,0 +1,2 @@
+model,R2,MAE,RMSE,MedAE,test_rows,personal_history_rows,global_fallback_rows
+User historical mean,0.376512503022457,7.809173685302829,11.066475190928234,5.17455132484436,10999,10439,560

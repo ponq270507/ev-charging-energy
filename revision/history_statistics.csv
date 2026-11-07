@@ -1,0 +1,21 @@
+suffix,definition,unit
+log_count,log1p(completed count),dimensionless
+energy_mean,cumulative completed energy mean,kWh
+energy_std,population SD of completed energy,kWh
+energy_last,most recently available energy,kWh
+energy_last3_mean,mean of up to last 3 energies,kWh
+energy_last10_mean,mean of up to last 10 energies,kWh
+energy_last10_median,median of up to last 10 energies,kWh
+duration_mean,cumulative mean connection duration,hours
+duration_last,most recent connection duration,hours
+duration_last3_mean,mean of up to last 3 connection durations,hours
+duration_last10_median,median of up to last 10 connection durations,hours
+power_last10_median,median energy/connection-hours over last 10,kW proxy
+power_last3_mean,mean energy/connection-hours over last 3,kW proxy
+historical_max_energy,maximum eligible completed energy,kWh
+historical_min_energy,minimum eligible completed energy,kWh
+log_history_span_days,log1p(days from first to last availability),dimensionless
+mean_cycle_days,"availability span/(count-1), if positive",days
+days_since_label,arrival minus latest label availability,days
+relative_cycle_gap,days_since_label/mean_cycle_days,dimensionless
+gap_energy_proxy,"min(max energy, mean energy * relative gap)",kWh heuristic
