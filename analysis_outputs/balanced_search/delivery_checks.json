@@ -1,0 +1,19 @@
+{
+  "report_pages": 14,
+  "response_pages": 5,
+  "balanced_fits": 185,
+  "notebook_code_cells": 19,
+  "all_notebook_cells_syntax_valid": true,
+  "new_default_verification_cell_executed_locally": true,
+  "whole_notebook_rerun_in_this_revision": false,
+  "google_colab_ui_checked_in_this_revision": false,
+  "full_original_training_repeated": false,
+  "three_RQs_preserved": true,
+  "source_csv_sha256": "d541259bed55e2a9bc3413756954e7a059b50f9c9031f1dfc6ec87cbf3afd358",
+  "main_report_overfull_boxes": false,
+  "independent_validation_performed": false,
+  "natural_error_figure_float_avoids_large_page_gap": true,
+  "inference_id_normalization_checked": true,
+  "inference_equivalent_id_cases": 30,
+  "complete_audit_included": "AUDIT_STATUS_22OCT_VI.md"
+}

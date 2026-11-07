@@ -1,0 +1,3 @@
+model,n,k,top20_hits,precision_at_20pct,high_energy_n,high_energy_MAE,high_energy_bias_pred_minus_actual,high_energy_underpredicted_n,high_energy_below_half_actual_n,low_energy_n,low_energy_MAE
+CV Blend,10999,2200,1456,0.6618181818181819,1070,15.749530015097626,-15.405106233885888,997,214,9929,5.883028075971089
+User historical mean,10999,2200,1308,0.5945454545454546,1070,17.968985847820747,-17.623635591301962,1034,262,9929,6.714300182040247

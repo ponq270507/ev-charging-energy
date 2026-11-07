@@ -1,0 +1,29 @@
+{
+  "target": "Demand (kWh)",
+  "prediction_point": "StartDatetime",
+  "primary_population": "Identified users: UserID != 0, fixed before final test scoring",
+  "clean_context_rows": 69570,
+  "identified_population_rows": 40790,
+  "development_context_rows": 52229,
+  "test_context_rows": 17310,
+  "personalized_train_rows": 29775,
+  "personalized_test_rows": 10999,
+  "test_start": "2022-07-19",
+  "purged_at_test_boundary": 31,
+  "CV_folds": 5,
+  "selection_metric": "Unweighted mean temporal CV R2",
+  "primary_history_protocol": "Online/prequential feature store: prior labels available after session end + 60s; model weights frozen throughout each evaluation window.",
+  "frozen_history_diagnostic": "Same fitted model, only development-pool history during test.",
+  "prior_test_exposure": "The same Korean final period appeared in an earlier coarse benchmark. These results are exploratory, not a newly blind test.",
+  "anonymous_rule": "ID 0 has no personal history; a separate all-user LightGBM supplies fallback predictions.",
+  "knn_cap": 12000,
+  "random_forest_bootstrap_cap": 30000,
+  "target_capping": false,
+  "prediction_floor_kWh": 0,
+  "sources_compared_in_development": [
+    "Caltech legacy 16,117 rows",
+    "Korean transactions 72,856 raw rows",
+    "Jiaxing 441,077 raw transactions; pilot development scores recorded separately"
+  ],
+  "seed": 42
+}

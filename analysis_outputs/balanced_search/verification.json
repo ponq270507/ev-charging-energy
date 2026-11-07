@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "actual_model_fits": 185,
+  "validation_metrics_recomputed": 740,
+  "six_distinct_configurations_per_tunable_family": true,
+  "seven_families_share_rows_and_matrices_within_each_fold": true,
+  "original_fixed_results_reproduced": true,
+  "primary_artifacts_unchanged": true,
+  "final_test_scored_by_new_search": false,
+  "independent_validation_performed": false,
+  "selected_CV_scores_are_exploratory_not_nested_estimates": true
+}

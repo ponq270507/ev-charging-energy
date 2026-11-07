@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "rows_reconciled": true,
+  "CV_selection_checked": true,
+  "all_saved_model_scores_recomputed": true,
+  "future_label_perturbation_passed": true,
+  "inference_without_current_outcomes_checked": true,
+  "online_completed_feed_checked": true,
+  "training_and_test_label_boundary_checked": true
+}

@@ -1,0 +1,138 @@
+feature,category,source
+hour,False,arrival timestamp or registered charger/account metadata
+dow,False,arrival timestamp or registered charger/account metadata
+month,False,arrival timestamp or registered charger/account metadata
+is_weekend,False,arrival timestamp or registered charger/account metadata
+days_since_start,False,arrival timestamp or registered charger/account metadata
+hour_sin,False,arrival timestamp or registered charger/account metadata
+hour_cos,False,arrival timestamp or registered charger/account metadata
+dow_sin,False,arrival timestamp or registered charger/account metadata
+dow_cos,False,arrival timestamp or registered charger/account metadata
+month_sin,False,arrival timestamp or registered charger/account metadata
+month_cos,False,arrival timestamp or registered charger/account metadata
+known_user,False,arrival timestamp or registered charger/account metadata
+ChargerID,True,arrival timestamp or registered charger/account metadata
+UserID,True,arrival timestamp or registered charger/account metadata
+ChargerCompany,True,arrival timestamp or registered charger/account metadata
+Location,True,arrival timestamp or registered charger/account metadata
+ChargerType,True,arrival timestamp or registered charger/account metadata
+global_log_count,False,prior completed sessions only
+global_energy_mean,False,prior completed sessions only
+global_energy_std,False,prior completed sessions only
+global_energy_last,False,prior completed sessions only
+global_energy_last3_mean,False,prior completed sessions only
+global_energy_last10_mean,False,prior completed sessions only
+global_energy_last10_median,False,prior completed sessions only
+global_duration_mean,False,prior completed sessions only
+global_duration_last,False,prior completed sessions only
+global_duration_last3_mean,False,prior completed sessions only
+global_duration_last10_median,False,prior completed sessions only
+global_power_last10_median,False,prior completed sessions only
+global_power_last3_mean,False,prior completed sessions only
+global_historical_max_energy,False,prior completed sessions only
+global_historical_min_energy,False,prior completed sessions only
+global_log_history_span_days,False,prior completed sessions only
+global_mean_cycle_days,False,prior completed sessions only
+global_days_since_label,False,prior completed sessions only
+global_relative_cycle_gap,False,prior completed sessions only
+global_gap_energy_proxy,False,prior completed sessions only
+charger_log_count,False,prior completed sessions only
+charger_energy_mean,False,prior completed sessions only
+charger_energy_std,False,prior completed sessions only
+charger_energy_last,False,prior completed sessions only
+charger_energy_last3_mean,False,prior completed sessions only
+charger_energy_last10_mean,False,prior completed sessions only
+charger_energy_last10_median,False,prior completed sessions only
+charger_duration_mean,False,prior completed sessions only
+charger_duration_last,False,prior completed sessions only
+charger_duration_last3_mean,False,prior completed sessions only
+charger_duration_last10_median,False,prior completed sessions only
+charger_power_last10_median,False,prior completed sessions only
+charger_power_last3_mean,False,prior completed sessions only
+charger_historical_max_energy,False,prior completed sessions only
+charger_historical_min_energy,False,prior completed sessions only
+charger_log_history_span_days,False,prior completed sessions only
+charger_mean_cycle_days,False,prior completed sessions only
+charger_days_since_label,False,prior completed sessions only
+charger_relative_cycle_gap,False,prior completed sessions only
+charger_gap_energy_proxy,False,prior completed sessions only
+user_log_count,False,prior completed sessions only
+user_energy_mean,False,prior completed sessions only
+user_energy_std,False,prior completed sessions only
+user_energy_last,False,prior completed sessions only
+user_energy_last3_mean,False,prior completed sessions only
+user_energy_last10_mean,False,prior completed sessions only
+user_energy_last10_median,False,prior completed sessions only
+user_duration_mean,False,prior completed sessions only
+user_duration_last,False,prior completed sessions only
+user_duration_last3_mean,False,prior completed sessions only
+user_duration_last10_median,False,prior completed sessions only
+user_power_last10_median,False,prior completed sessions only
+user_power_last3_mean,False,prior completed sessions only
+user_historical_max_energy,False,prior completed sessions only
+user_historical_min_energy,False,prior completed sessions only
+user_log_history_span_days,False,prior completed sessions only
+user_mean_cycle_days,False,prior completed sessions only
+user_days_since_label,False,prior completed sessions only
+user_relative_cycle_gap,False,prior completed sessions only
+user_gap_energy_proxy,False,prior completed sessions only
+charger_weekday_log_count,False,prior completed sessions only
+charger_weekday_energy_mean,False,prior completed sessions only
+charger_weekday_energy_std,False,prior completed sessions only
+charger_weekday_energy_last,False,prior completed sessions only
+charger_weekday_energy_last3_mean,False,prior completed sessions only
+charger_weekday_energy_last10_mean,False,prior completed sessions only
+charger_weekday_energy_last10_median,False,prior completed sessions only
+charger_weekday_duration_mean,False,prior completed sessions only
+charger_weekday_duration_last,False,prior completed sessions only
+charger_weekday_duration_last3_mean,False,prior completed sessions only
+charger_weekday_duration_last10_median,False,prior completed sessions only
+charger_weekday_power_last10_median,False,prior completed sessions only
+charger_weekday_power_last3_mean,False,prior completed sessions only
+charger_weekday_historical_max_energy,False,prior completed sessions only
+charger_weekday_historical_min_energy,False,prior completed sessions only
+charger_weekday_log_history_span_days,False,prior completed sessions only
+charger_weekday_mean_cycle_days,False,prior completed sessions only
+charger_weekday_days_since_label,False,prior completed sessions only
+charger_weekday_relative_cycle_gap,False,prior completed sessions only
+charger_weekday_gap_energy_proxy,False,prior completed sessions only
+user_weekday_log_count,False,prior completed sessions only
+user_weekday_energy_mean,False,prior completed sessions only
+user_weekday_energy_std,False,prior completed sessions only
+user_weekday_energy_last,False,prior completed sessions only
+user_weekday_energy_last3_mean,False,prior completed sessions only
+user_weekday_energy_last10_mean,False,prior completed sessions only
+user_weekday_energy_last10_median,False,prior completed sessions only
+user_weekday_duration_mean,False,prior completed sessions only
+user_weekday_duration_last,False,prior completed sessions only
+user_weekday_duration_last3_mean,False,prior completed sessions only
+user_weekday_duration_last10_median,False,prior completed sessions only
+user_weekday_power_last10_median,False,prior completed sessions only
+user_weekday_power_last3_mean,False,prior completed sessions only
+user_weekday_historical_max_energy,False,prior completed sessions only
+user_weekday_historical_min_energy,False,prior completed sessions only
+user_weekday_log_history_span_days,False,prior completed sessions only
+user_weekday_mean_cycle_days,False,prior completed sessions only
+user_weekday_days_since_label,False,prior completed sessions only
+user_weekday_relative_cycle_gap,False,prior completed sessions only
+user_weekday_gap_energy_proxy,False,prior completed sessions only
+user_charger_log_count,False,prior completed sessions only
+user_charger_energy_mean,False,prior completed sessions only
+user_charger_energy_std,False,prior completed sessions only
+user_charger_energy_last,False,prior completed sessions only
+user_charger_energy_last3_mean,False,prior completed sessions only
+user_charger_energy_last10_mean,False,prior completed sessions only
+user_charger_energy_last10_median,False,prior completed sessions only
+user_charger_duration_mean,False,prior completed sessions only
+user_charger_duration_last,False,prior completed sessions only
+user_charger_duration_last3_mean,False,prior completed sessions only
+user_charger_duration_last10_median,False,prior completed sessions only
+user_charger_power_last10_median,False,prior completed sessions only
+user_charger_power_last3_mean,False,prior completed sessions only
+user_charger_historical_max_energy,False,prior completed sessions only
+user_charger_historical_min_energy,False,prior completed sessions only
+user_charger_log_history_span_days,False,prior completed sessions only
+user_charger_mean_cycle_days,False,prior completed sessions only
+user_charger_days_since_label,False,prior completed sessions only
+user_charger_relative_cycle_gap,False,prior completed sessions only
+user_charger_gap_energy_proxy,False,prior completed sessions only
